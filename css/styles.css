@@ -114,7 +114,7 @@ header {
   list-style: none;
   display: inline-block;
   text-transform: uppercase;
-  margin: 10px 0px;
+  margin: 10px auto;
 }
 
 .nav-main a {
@@ -124,7 +124,7 @@ header {
   font-size: 1.5em;
   text-decoration: none;
   color: #1b203d;
-  padding-right: 60px;
+  padding-right: 55px;
 }
 
 .nav-main a:hover {
@@ -224,38 +224,58 @@ header {
 
 /* Buttons */
 
-.button-container {
+.preorder {
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  padding-top: 30px;
+  top: 77%;
+  width: 70%;
+  height: 15%;
+  background-color: #41a535;
+  color: #1b203d;
+  padding-left: 10px;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.preorder:hover {
+  color: #fff;
+}
+
+.more-info-container {
   position: relative;
   width: 100%;
 }
 
-.button-container img {
+.more-info-container img {
   width: 100%;
   height: auto;
 }
-
-.button-container .more-info-cta {
+.more-info {
   position: absolute;
   top: 84%;
-  left: 27.6%;
-  width: 72.5%;
+  left: 25.3%;
+  width: 70%;
   height: 13.4%;
   background-color: #41a535;
-  border-radius: 1px;
+  color: #1b203d;
   text-align: left;
   padding-left: 10px;
-  border: none;
   font-family: proxima-nova, sans-serif;
   font-weight: 600;
   font-size: 1.4rem;
-  cursor: pointer;
+  text-decoration: none;
 }
 
-.button-container .fa-arrow-right {
-  padding-left: 15%;
+.more-info-container .fa-arrow-right {
+  padding-left: 8%;
 }
 
-.button-container .more-info-cta:hover {
+.more-info:hover {
   color: #fff;
   text-decoration: underline;
 }
@@ -279,6 +299,18 @@ footer {
 .footer-nav a {
   color: #fff;
   text-decoration: none;
+}
+
+.bottom-container {
+  margin-left: 35px;
+  margin-right: 35px;
+  background: rgba(221, 221, 221, 40%);
+  padding: 1px;
+  text-align: center;
+}
+
+.bottom-container p {
+  color: #1b203d;
 }
 
 /* media phone */
@@ -361,12 +393,13 @@ footer {
 
   /* buttons phone */
 
-  .button-container .more-info-cta {
+  .more-info-container .more-info {
     font-size: 2rem;
     color: #fff;
+    left: 27.2%;
   }
 
-  .button-container .fa-arrow-right {
-    padding-left: 31%;
+  .more-info .fa-arrow-right {
+    padding-left: 25%;
   }
 }
