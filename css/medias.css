@@ -1,0 +1,88 @@
+@media only screen and (max-width: 770px) {
+  /* navigation phone */
+
+  /* Icons phone */
+
+  .fa-home {
+    display: block;
+  }
+
+  .fa-store {
+    display: block;
+    color: #1b203d;
+  }
+
+  .fa-gamepad {
+    display: block;
+    color: #1b203d;
+  }
+
+  .fa-envelope {
+    display: block;
+    color: #1b203d;
+  }
+
+  .nav-text {
+    display: none;
+  }
+
+  .nav-top ul {
+    background-color: rgba(221, 221, 221, 40%);
+    border-radius: 10px;
+  }
+
+  .nav-top li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 30px 10px 0;
+    font-size: 2rem;
+  }
+
+  .nav-main ul {
+    background-color: rgba(221, 221, 221, 40%);
+    border-radius: 13px;
+  }
+
+  .nav-main li {
+    list-style: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 10px 30px 0px 0px;
+    margin-top: 50px;
+  }
+
+  .nav-main a:hover {
+    text-decoration: none;
+  }
+
+  /* flexbox nav phone */
+
+  .space-between {
+    justify-content: space-between;
+  }
+
+  /* Main content phone */
+
+  .home-content {
+    flex-direction: column;
+  }
+  .home-games {
+    flex-direction: column;
+    column-gap: 50px;
+  }
+  .games-content {
+    max-width: 400px;
+  }
+
+  /* buttons phone */
+
+  .more-info-container .more-info {
+    font-size: 2rem;
+    color: #fff;
+    left: 27.1%;
+  }
+
+  .more-info .fa-arrow-right {
+    padding-left: 25%;
+  }
+}

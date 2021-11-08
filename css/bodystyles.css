@@ -1,0 +1,30 @@
+footer {
+  color: #fff;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.footer-nav li {
+  list-style: none;
+  padding: 1rem 0 0 0;
+}
+
+.footer-nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.bottom-container {
+  margin-left: 35px;
+  margin-right: 35px;
+  background: rgba(221, 221, 221, 40%);
+  padding: 1px;
+  text-align: center;
+}
+
+.bottom-container p {
+  color: #1b203d;
+}

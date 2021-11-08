@@ -12,11 +12,21 @@ body {
   margin: 0 auto;
 }
 
-h2 {
+h3 {
   font-family: proxima-nova-condensed, sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 1.8rem;
+  color: #fff;
+}
+
+h1,
+h2 {
+  margin: 1rem 0 1rem 35px;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 2.3rem;
   color: #fff;
 }
 
@@ -49,44 +59,26 @@ header {
 
 /* icons top nav */
 
-.fa-user {
-  color: #1b203d;
-}
-
+.fa-envelope .fa-gamepad .fa-home .fa-store,
+.fa-search,
+.fa-user,
 .fa-shopping-cart {
   color: #1b203d;
 }
 
-.fa-search {
-  color: #1b203d;
-}
-
-.fa-user:hover {
+.active .fas {
   color: #fff;
 }
 
-.fa-shopping-cart:hover {
-  color: #fff;
-}
-
-.fa-search:hover {
+.fas:hover {
   color: #fff;
 }
 
 /* icons main nav */
 
-.fa-home {
-  display: none;
-}
-
-.fa-store {
-  display: none;
-}
-
-.fa-gamepad {
-  display: none;
-}
-
+.fa-home,
+.fa-store,
+.fa-gamepad,
 .fa-envelope {
   display: none;
 }
@@ -129,6 +121,7 @@ header {
 
 .nav-main a:hover {
   text-decoration: underline;
+  color: #fff;
 }
 
 .container {
@@ -178,15 +171,6 @@ header {
 /* hr lines end */
 
 /* Main content */
-
-.home-info h1 {
-  margin: 1rem 0 1rem 35px;
-  font-family: proxima-nova, sans-serif;
-  font-weight: 800;
-  font-style: normal;
-  font-size: 2.3rem;
-  color: #fff;
-}
 
 .home-content {
   display: flex;
@@ -278,128 +262,4 @@ header {
 .more-info:hover {
   color: #fff;
   text-decoration: underline;
-}
-
-/* footer */
-
-footer {
-  color: #fff;
-  font-family: proxima-nova, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1rem;
-  color: #fff;
-}
-
-.footer-nav li {
-  list-style: none;
-  padding: 1rem 0 0 0;
-}
-
-.footer-nav a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.bottom-container {
-  margin-left: 35px;
-  margin-right: 35px;
-  background: rgba(221, 221, 221, 40%);
-  padding: 1px;
-  text-align: center;
-}
-
-.bottom-container p {
-  color: #1b203d;
-}
-
-/* media phone */
-
-@media only screen and (max-width: 770px) {
-  /* navigation phone */
-
-  /* Icons phone */
-
-  .fa-home {
-    display: block;
-  }
-
-  .fa-store {
-    display: block;
-    color: #1b203d;
-  }
-
-  .fa-gamepad {
-    display: block;
-    color: #1b203d;
-  }
-
-  .fa-envelope {
-    display: block;
-    color: #1b203d;
-  }
-
-  .nav-text {
-    display: none;
-  }
-
-  .nav-top ul {
-    background-color: rgba(221, 221, 221, 40%);
-    border-radius: 10px;
-  }
-
-  .nav-top li {
-    list-style: none;
-    display: inline-block;
-    padding: 10px 30px 10px 0;
-    font-size: 2rem;
-  }
-
-  .nav-main ul {
-    background-color: rgba(221, 221, 221, 40%);
-    border-radius: 13px;
-  }
-
-  .nav-main li {
-    list-style: none;
-    display: inline-block;
-    font-size: 1.5rem;
-    padding: 10px 30px 0px 0px;
-    margin-top: 50px;
-  }
-
-  .nav-main a:hover {
-    text-decoration: none;
-  }
-
-  /* flexbox nav phone */
-
-  .space-between {
-    justify-content: space-between;
-  }
-
-  /* Main content phone */
-
-  .home-content {
-    flex-direction: column;
-  }
-  .home-games {
-    flex-direction: column;
-    column-gap: 50px;
-  }
-  .games-content {
-    max-width: 400px;
-  }
-
-  /* buttons phone */
-
-  .more-info-container .more-info {
-    font-size: 2rem;
-    color: #fff;
-    left: 27.1%;
-  }
-
-  .more-info .fa-arrow-right {
-    padding-left: 25%;
-  }
 }
