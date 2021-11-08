@@ -7,11 +7,11 @@
     <script src="https://kit.fontawesome.com/3085842107.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.typekit.net/vsr7unr.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/overlay.css" />
     <link rel="stylesheet" href="css/bodystyles.css" />
     <link rel="stylesheet" href="css/medias.css" />
     <title>GameHub</title>
   </head>
-  <div id=myOverlay>
   <header>
     <div class="container">
       <div class="row space-between">
@@ -22,7 +22,10 @@
           <nav class="nav-top">
             <ul>
               <li>
-                <a href="searchgames.html"><span class="fas fa-search"></span></a>
+                <div class="search-box">
+                  <input class="search-txt" type="text" name="" placeholder="Search game" />
+                  <a href="#" class="search-btn"><span class="fas fa-search"></span></a>
+                </div>
               </li>
               <li>
                 <a href="shoppingcart.html"><span class="fas fa-shopping-cart"></span></a>
@@ -52,6 +55,7 @@
       </div>
     </div>
   </header>
+  <body>
     <div class="content-wrapper">
       <section class="home-info">
         <h1>New Arrivals</h1>
@@ -112,8 +116,7 @@
             <a href="#" class="more-info">More info <span class="fas fa-arrow-right"></span></a>
           </div>
         </div>
-        </section>
-      </div>
+      </section>
       <footer>
         <hr class="footer-hr" />
         <nav class="footer-nav">

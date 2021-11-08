@@ -27,6 +27,15 @@
     font-size: 2rem;
   }
 
+  /* search bar */
+
+  .search-box:hover > .search-txt {
+    width: 180px;
+    padding: 0 6px;
+  }
+
+  /* search end */
+
   .nav-main ul {
     background-color: rgba(221, 221, 221, 40%);
     border-radius: 13px;
