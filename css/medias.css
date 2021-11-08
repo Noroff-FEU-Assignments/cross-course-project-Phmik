@@ -3,20 +3,9 @@
 
   /* Icons phone */
 
-  .fa-home {
-    display: block;
-  }
-
-  .fa-store {
-    display: block;
-    color: #1b203d;
-  }
-
-  .fa-gamepad {
-    display: block;
-    color: #1b203d;
-  }
-
+  .fa-home,
+  .fa-store,
+  .fa-gamepad,
   .fa-envelope {
     display: block;
     color: #1b203d;

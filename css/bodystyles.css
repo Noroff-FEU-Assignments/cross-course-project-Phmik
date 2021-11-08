@@ -1,10 +1,7 @@
-footer {
-  color: #fff;
-  font-family: proxima-nova, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1rem;
-  color: #fff;
+.footer-hr {
+  border: 1px solid #fff;
+  margin: 40px 0px 0px 35px;
+  max-width: 1000px;
 }
 
 .footer-nav li {
@@ -13,6 +10,10 @@ footer {
 }
 
 .footer-nav a {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
   color: #fff;
   text-decoration: none;
 }
