@@ -73,14 +73,12 @@
   }
 
   /* buttons phone */
-
-  .more-info-container .more-info {
+  .more-info {
     font-size: 2rem;
-    color: #fff;
-    left: 27.1%;
+    top: 84%;
   }
 
   .more-info .fa-arrow-right {
-    padding-left: 25%;
+    padding-left: 30%;
   }
 }
