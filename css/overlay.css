@@ -3,12 +3,16 @@
   background: none;
   outline: none;
   padding: 0;
-  color: #fff;
+  color: #1b203d;
   font-size: 1.5rem;
   transform: 0.4s;
   line-height: 40px;
   width: 0px;
   transition: 0.4s;
+}
+
+.search-txt::placeholder {
+  color: #fff;
 }
 
 .search-btn {
