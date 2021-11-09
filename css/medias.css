@@ -11,6 +11,14 @@
     color: #1b203d;
   }
 
+  .nav-main .active {
+    text-decoration: none;
+  }
+
+  .nav-main a:hover {
+    text-decoration: none;
+  }
+
   .nav-text {
     display: none;
   }
@@ -45,12 +53,8 @@
     list-style: none;
     display: inline-block;
     font-size: 1.5rem;
-    padding: 10px 30px 0px 0px;
+    padding: 10px 11px 0px 0px;
     margin-top: 50px;
-  }
-
-  .nav-main a:hover {
-    text-decoration: none;
   }
 
   /* flexbox nav phone */
@@ -73,6 +77,7 @@
   }
 
   /* buttons phone */
+
   .more-info {
     font-size: 2rem;
     top: 84%;
@@ -80,5 +85,52 @@
 
   .more-info .fa-arrow-right {
     padding-left: 30%;
+  }
+
+  /* footer nav */
+  .bottom-container {
+    margin-left: 0px;
+  }
+
+  /* Games page */
+  .add-cart-cta,
+  .product-more-info {
+    max-width: 343px;
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  /* Add to cart overlay */
+
+  .added-popup {
+    max-width: 300px;
+  }
+  .added-popup h5 {
+    font-size: 1rem;
+  }
+
+  @media only screen and (max-width: 374px) {
+    /* contact form */
+
+    .contact-img img {
+      display: none;
+    }
+
+    .contact-information {
+      font-size: 1rem;
+    }
+
+    .contact-details {
+      font-size: 1rem;
+    }
+
+    .input-contact,
+    .label-contact,
+    .textarea-contact {
+      max-width: 250px;
+    }
+    .submit-contact {
+      max-width: 270px;
+    }
   }
 }

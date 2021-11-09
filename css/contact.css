@@ -1,0 +1,125 @@
+.contact-img img {
+  width: 100%;
+  flex: 0 5 10rem;
+  border-radius: 50%;
+  max-height: 200px;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 20px 35px 0 0;
+}
+
+.contact-content p {
+  max-width: 250px;
+  margin: 0px 10px 0px 35px;
+  font-size: 1rem;
+}
+
+.contact-container {
+  display: flex;
+  margin: 35px;
+  flex-direction: column;
+  gap: 5vh;
+}
+
+.column-contact1,
+.column-contact2,
+.column-contact3 {
+  display: flex;
+  flex-direction: row;
+  gap: 3vh;
+}
+
+.fa-phone-alt,
+.fa-envelope-open,
+.fa-comment {
+  color: #fff;
+  font-size: 3.2rem;
+  display: flex;
+}
+
+.contact-details {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #fff;
+}
+
+.contact-information {
+  color: #41a535;
+  text-transform: none;
+  font-size: 1.2rem;
+  display: flex;
+}
+
+.fieldset-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* contact form */
+
+form {
+  max-width: 402px;
+}
+
+.fieldset-contact {
+  border: none;
+}
+
+.label-contact {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.input-contact {
+  color: #1b203d;
+  padding: 10px;
+}
+
+.label-contact,
+.input-contact,
+.submit-contact,
+.textarea-contact {
+  margin-left: 16px;
+  border-radius: 5px;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+}
+
+.submit-contact {
+  background: none;
+  border: solid 2px #41a535;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.submit-contact:hover {
+  background: #41a535;
+  transition: 0.4s;
+}
+
+.textarea-contact {
+  resize: none;
+  padding: 10px;
+}
+
+.textarea-contact::placeholder {
+  color: #1b203d;
+}

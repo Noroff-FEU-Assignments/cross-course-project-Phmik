@@ -18,6 +18,7 @@ h3 {
   font-style: normal;
   font-size: 1.8rem;
   color: #fff;
+  margin: 10px 0px;
 }
 
 h1,
@@ -94,7 +95,8 @@ header {
 
 /* icons end */
 
-.nav-top ul {
+.nav-top ul,
+.nav-main ul {
   background-color: rgba(221, 221, 221, 40%);
   border-radius: 10px;
 }
@@ -104,11 +106,6 @@ header {
   display: inline-block;
   padding: 10px 30px 10px 0;
   font-size: 2rem;
-}
-
-.nav-main ul {
-  background-color: rgba(221, 221, 221, 40%);
-  border-radius: 10px;
 }
 
 .nav-main li {
@@ -169,6 +166,17 @@ header {
   border: 1px solid #fff;
   max-width: 1000px;
   margin-left: 35px;
+}
+
+.games-hr {
+  border: 1px solid #fff;
+  margin-bottom: 10px;
+}
+
+.contact-hr {
+  border: 1px solid #fff;
+  margin: 20px 0 0 35px;
+  max-width: 1000px;
 }
 
 /* hr lines end */
@@ -260,10 +268,9 @@ header {
 }
 
 .more-info-container .fa-arrow-right {
-  padding-left: 20%;
+  padding-left: 12%;
 }
 
 .more-info:hover {
   color: #fff;
-  text-decoration: underline;
 }

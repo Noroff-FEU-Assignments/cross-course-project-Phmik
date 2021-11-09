@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/3085842107.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/vsr7unr.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/search.css" />
+    <link rel="stylesheet" href="css/bodystyles.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/medias.css" />
+    <title>Contact</title>
+  </head>
+  <header>
+    <div class="container">
+      <div class="row space-between">
+        <div class="logo">
+          <img src="images/GameHub_Logo.png" alt="gamehub logo" />
+        </div>
+        <div class="nav-container column">
+          <nav class="nav-top">
+            <ul>
+              <li>
+                <div class="search-box">
+                  <input class="search-txt" type="text" name="" placeholder="Search game.." />
+                  <a href="#" class="search-btn"><span class="fas fa-search"></span></a>
+                </div>
+              </li>
+              <li>
+                <a href="shoppingcart.html"><span class="fas fa-shopping-cart"></span></a>
+              </li>
+              <li>
+                <a href="login.html"><span class="fas fa-user"></span></a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="nav-main">
+            <ul>
+              <li>
+                <a href="index.html"><span class="fas fa-home"></span> <span class="nav-text">Home</span></a>
+              </li>
+              <li>
+                <a href="marketplace.html"><span class="fas fa-store"></span> <span class="nav-text">Marketplace</span></a>
+              </li>
+              <li>
+                <a href="games.html"><span class="fas fa-gamepad"></span> <span class="nav-text">Games</span></a>
+              </li>
+              <li>
+                <a href="contact.html" class="active"><span class="fas fa-envelope"></span> <span class="nav-text">Contact</span></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <body>
+    <div class="content-wrapper">
+      <section class="home-info">
+        <h1>Contact Us</h1>
+      </section>
+      <hr class="headline-hr" />
+      <div class="contact-content">
+        <p>We are happy to be in any assistance you might need. Please use one of the options below.</p>
+        <div class="contact-img">
+          <img src="images/moi.jpg" alt="picture of phillip" />
+        </div>
+      </div>
+      <hr class="contact-hr" />
+      <div class="contact-container">
+        <div class="column-contact1">
+          <span class="fas fa-phone-alt"></span>
+          <span class="contact-details">Call us <span class="contact-information">+47 123 456 789</span></span>
+        </div>
+        <div class="column-contact2">
+          <span class="fas fa-envelope-open"></span>
+          <span class="contact-details">Email us<span class="contact-information">GameHub@GameHub.com</span></span>
+        </div>
+        <div class="column-contact3"><span class="fas fa-comment"></span><span class="contact-details">Open a chat with one of our available operators</span></div>
+      </div>
+      <form action="action_page.php">
+        <fieldset class="fieldset-contact">
+          <label for="first-name" class="label-contact">Full name</label>
+          <input type="text" id="first-name" name="first-name" class="input-contact" required />
+          <label for="email" class="label-contact">Your email</label>
+          <input type="text" id="email" name="email" class="input-contact" required />
+          <textarea name="Message" id="your-message" cols="30" rows="4" placeholder="Your message.." class="textarea-contact" required></textarea>
+          <input type="submit" value="Send message" class="submit-contact" />
+        </fieldset>
+      </form>
+      <footer>
+        <hr class="footer-hr" />
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="marketplace.html">Marketplace</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </nav>
+        <div class="bottom-container">
+          <p>Phillip Mikalsen FT21 GameHub</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
