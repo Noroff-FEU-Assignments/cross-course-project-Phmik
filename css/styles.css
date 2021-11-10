@@ -82,6 +82,7 @@ header {
 
 .fas:hover {
   color: #fff;
+  transition: 0.2s;
 }
 
 /* icons main nav */
@@ -128,6 +129,7 @@ header {
 .nav-main a:hover {
   text-decoration: underline;
   color: #fff;
+  transition: 0.4s;
 }
 
 .container {
@@ -239,6 +241,7 @@ header {
 
 .preorder:hover {
   color: #fff;
+  transition: 0.4s;
 }
 
 .more-info-container {
@@ -273,4 +276,42 @@ header {
 
 .more-info:hover {
   color: #fff;
+  transition: 0.4s;
+}
+
+/* dropdown login top menu */
+.dropdown-profile {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-profile-content {
+  display: none;
+  position: absolute;
+  right: 0px;
+  border-radius: 10px;
+  background-color: rgba(27, 32, 61, 100%);
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-profile-content a {
+  transition: 0.4s;
+  color: #fff;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.1rem;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-profile-content a:hover {
+  color: #41a535;
+}
+
+.dropdown-profile:hover .dropdown-profile-content {
+  display: block;
 }
