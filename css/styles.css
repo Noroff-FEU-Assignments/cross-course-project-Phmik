@@ -242,7 +242,24 @@ img {
   text-transform: uppercase;
 }
 
-.preorder:hover {
+.new-more-info {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+  border: 1px solid #41a535;
+  color: #fff;
+  padding: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.new-more-info:hover {
+  transition: 0.4s;
+  background-color: #41a535;
+}
+
+.preorder:hover,
+.more-info:hover {
   color: #fff;
   transition: 0.4s;
 }
@@ -252,10 +269,6 @@ img {
   width: 100%;
 }
 
-.more-info-container img {
-  width: 100%;
-  height: auto;
-}
 .more-info {
   float: left;
   padding: 10px 0px 10px 10px;
@@ -275,11 +288,6 @@ img {
 
 .more-info-container .fa-arrow-right {
   padding-left: 12%;
-}
-
-.more-info:hover {
-  color: #fff;
-  transition: 0.4s;
 }
 
 /* dropdown login top menu */
