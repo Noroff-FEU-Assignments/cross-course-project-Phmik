@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/3085842107.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.typekit.net/vsr7unr.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/search.css" />
-    <link rel="stylesheet" href="css/bodystyles.css" />
-    <link rel="stylesheet" href="css/products.css" />
-    <link rel="stylesheet" href="css/medias.css" />
-    <title>GameHub</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/search.css" />
+    <link rel="stylesheet" href="/css/bodystyles.css" />
+    <link rel="stylesheet" href="/css/product.css" />
+    <link rel="stylesheet" href="/css/medias.css" />
+    <title>Games - Assassin</title>
   </head>
   <header>
     <div class="container">
       <div class="row space-between">
         <div class="logo">
-          <img src="images/GameHub_Logo.png" alt="gamehub logo" />
+          <img src="/images/GameHub_Logo.png" alt="gamehub logo" />
         </div>
         <div class="nav-container column">
           <nav class="nav-top">
@@ -46,16 +46,16 @@
           <nav class="nav-main">
             <ul>
               <li>
-                <a href="index.html" class="active"><span class="fas fa-home"></span> <span class="nav-text">Home</span></a>
+                <a href="/index.html"><span class="fas fa-home"></span> <span class="nav-text">Home</span></a>
               </li>
               <li>
-                <a href="marketplace.html"><span class="fas fa-store"></span> <span class="nav-text">Marketplace</span></a>
+                <a href="/marketplace.html"><span class="fas fa-store"></span> <span class="nav-text">Marketplace</span></a>
               </li>
               <li>
-                <a href="games.html"><span class="fas fa-gamepad"></span> <span class="nav-text">Games</span></a>
+                <a href="/games.html" class="active"><span class="fas fa-gamepad"></span> <span class="nav-text">Games</span></a>
               </li>
               <li>
-                <a href="contact.html"><span class="fas fa-envelope"></span> <span class="nav-text">Contact</span></a>
+                <a href="/contact.html"><span class="fas fa-envelope"></span> <span class="nav-text">Contact</span></a>
               </li>
             </ul>
           </nav>
@@ -63,4 +63,50 @@
       </div>
     </div>
   </header>
+  <body>
+    <div class="content-wrapper">
+      <section class="home-info">
+        <h1>Assassin</h1>
+      </section>
+      <hr class="headline-hr" />
+      <div class="product-container">
+        <div class="product-row-container">
+          <div class="product-img-container">
+            <img src="/images/assassin_cover.jpg" alt="assassin cover image" />
+            <a href="#onClick" class="add-cart-cta-product">Add to Cart <span class="fas fa-arrow-right"></span></a>
+          </div>
+          <section class="product-txt">
+            <h3>Game information</h3>
+            <p>Are you silent enough to make it through this hard sneaking game? You are a trained ninja where you have mastered the arts of swords and assassination. Co-Op available.</p>
+            <h3>Computer specifications</h3>
+            <p>Single Player <br />Age: <em>16+ Years</em> <br /><em>CPU: i7++</em> <br />GPU: <em>geforce 2060++</em></p>
+            <h3>Pricing</h3>
+            <p>Buy from another user <br /><span class="product-price">Price range from</span> 10-25$</p>
+            <p>Buy from our store <br /><span class="product-price">Price:</span> 49$</p>
+          </section>
+        </div>
+      </div>
+
+      <footer>
+        <hr class="footer-hr" />
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/marketplace.html">Marketplace</a></li>
+            <li><a href="/games.html">Games</a></li>
+            <li><a href="/contact.html">Contact us</a></li>
+          </ul>
+        </nav>
+        <div class="bottom-container">
+          <p>Phillip Mikalsen FT21 GameHub</p>
+        </div>
+      </footer>
+      <div id="onClick" class="added-overlay">
+        <div class="added-popup">
+          <h5>Added game to Shopping Cart</h5>
+          <a class="closeOverlay" href="#">&times;</a>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

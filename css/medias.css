@@ -105,6 +105,13 @@
     width: 100%;
   }
 
+  /* Products page */
+
+  .add-cart-cta-product {
+    font-size: 1.5rem;
+    max-width: 376px;
+  }
+
   /* Add to cart overlay */
 
   .added-popup {

@@ -55,13 +55,16 @@ header {
   width: 100%;
 }
 
+img {
+  width: 100%;
+}
+
 .logo {
   flex: 0 5 10rem;
   align-self: flex-start;
 }
 
 .logo img {
-  width: 100%;
   margin: 2em 0 0 50px;
 }
 
