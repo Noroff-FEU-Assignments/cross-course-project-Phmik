@@ -1,5 +1,6 @@
 @media only screen and (max-width: 770px) {
   /* navigation phone */
+
   /* Icons phone */
 
   .fa-home,
@@ -34,15 +35,6 @@
     font-size: 2rem;
   }
 
-  /* search bar */
-
-  .search-box:hover > .search-txt {
-    width: 180px;
-    padding: 0 6px;
-  }
-
-  /* search end */
-
   .nav-main ul {
     background-color: rgba(221, 221, 221, 40%);
     border-radius: 13px;
@@ -54,6 +46,13 @@
     font-size: 1.5rem;
     padding: 10px 11px 0px 0px;
     margin-top: 50px;
+  }
+
+  /* search bar */
+
+  .search-box:hover > .search-txt {
+    width: 180px;
+    padding: 0 6px;
   }
 
   /* flexbox nav phone */
@@ -121,7 +120,47 @@
     font-size: 1rem;
   }
 
+  /* login details phone */
+
+  .signin-btn-top,
+  .signup-btn-top,
+  .signin-btn,
+  .signup-btn {
+    font-size: 1.3rem;
+  }
+
+  .login-txt,
+  .checkbox-container,
+  .create-txt {
+    font-size: 1rem;
+  }
+
+  .signin-btn-top {
+    margin-right: 42px;
+  }
+
+  .signin-btn-top,
+  .signup-btn-top {
+    margin-top: 15px;
+  }
+
+  .login-box,
+  .create-details {
+    max-width: 200px;
+  }
+
   @media only screen and (max-width: 374px) {
+    /* login details */
+
+    .create-row-container {
+      flex-direction: column;
+      gap: 0px;
+    }
+
+    .create-finish-btn {
+      font-size: 1.1rem;
+    }
+
     /* contact form */
 
     .contact-img img {

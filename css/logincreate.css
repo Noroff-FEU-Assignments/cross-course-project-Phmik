@@ -1,0 +1,253 @@
+/* Log in & create user overlay */
+
+.profile-log-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-profile-container {
+  display: flex;
+  max-width: 500px;
+  width: 100%;
+}
+
+.login-txt,
+.checkbox-container,
+.signin-btn-top,
+.signup-btn-top {
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.checkbox-container {
+  font-weight: 500;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Sign in & sign up */
+
+.sign-create-btn-container {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.signin-btn-top,
+.signup-btn-top {
+  margin: 10px 70px 0 0;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+.signin-btn-top:hover,
+.signup-btn-top:hover {
+  color: #41a535;
+  transition: 0.4s;
+}
+
+#profileClick .signin-btn-top {
+  color: #41a535;
+}
+
+#profileCreate .signup-btn-top {
+  color: #41a535;
+}
+
+/* login buttons */
+
+.login-btn-container {
+  display: flex;
+  margin: 30px 0;
+  gap: 20px;
+  align-items: center;
+}
+
+.signin-btn,
+.password-btn {
+  font-weight: 800;
+  font-size: 1.5rem;
+  background-color: #fff;
+  color: #1b203d;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.signin-btn:hover,
+.password-btn:hover {
+  transition: 0.4s;
+  background-color: #41a535;
+  color: #fff;
+}
+
+.password-btn {
+  font-size: 1rem;
+}
+
+/* Checkbox */
+
+.checkbox-container input {
+  display: none;
+}
+
+.checkmark {
+  width: 25px;
+  height: 25px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.checkbox-container input:hover ~ .checkmark {
+  background-color: #ddd;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #fff;
+}
+
+.checkmark:after {
+  content: "";
+  display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-container .checkmark:after {
+  width: 5px;
+  height: 12px;
+  border: solid #1b203d;
+  border-width: 0 5px 5px 0;
+  transform: rotate(45deg);
+  margin: 2px 0px 0 7px;
+}
+
+/* login input */
+
+.login-box {
+  display: flex;
+  outline: none;
+  border: none;
+  padding: 10px;
+  margin: 10px 0px;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* login+create font */
+
+.login-box,
+.create-details {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #1b203d;
+}
+
+/* create profile input */
+
+.create-field {
+  border: none;
+  outline: none;
+}
+
+.create-txt,
+.create-finish-btn {
+  margin: 10px 0px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+}
+
+.create-details {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.create-details:hover {
+  background-color: #ddd;
+}
+
+.create-row-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px;
+  gap: 25px;
+}
+
+.create-finish-container {
+  margin: 50px 17px;
+}
+
+/* Create profile buttons */
+
+.create-finish-btn {
+  text-transform: uppercase;
+  background: none;
+  border: 1px solid #41a535;
+  font-weight: 700;
+  padding: 10px 25px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.create-finish-btn:hover {
+  background-color: #41a535;
+  transition: 0.4s;
+}
+/* Overlay */
+
+.profile-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  transition: opacity 100ms;
+  visibility: hidden;
+  opacity: 0;
+  backdrop-filter: blur(15px);
+}
+
+.profile-overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.profile-popup {
+  position: relative;
+  margin: 80px auto;
+  padding: 20px;
+  background-color: #1b203d;
+  border-radius: 15px;
+  max-width: 500px;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+.profile-popup .close-profileOverlay {
+  position: absolute;
+  top: 5px;
+  right: 30px;
+  margin-right: 40px;
+  transition: all 0.4s;
+  font-size: 60px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+.close-profileOverlay:hover {
+  color: #41a535;
+}
