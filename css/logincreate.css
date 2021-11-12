@@ -146,7 +146,6 @@
 
 .login-box,
 .create-details {
-  font-weight: 400;
   font-size: 1rem;
   color: #1b203d;
 }
@@ -173,7 +172,8 @@
   padding: 10px;
 }
 
-.create-details:hover {
+.create-details:hover,
+.login-box:hover {
   background-color: #ddd;
 }
 

@@ -99,16 +99,31 @@
   /* Games page */
   .add-cart-cta,
   .product-more-info {
-    max-width: 343px;
-    font-size: 2rem;
-    width: 100%;
+    font-size: 1.5rem;
   }
 
-  /* Products page */
+  /* profile page */
 
-  .add-cart-cta-product {
-    font-size: 1.5rem;
-    max-width: 376px;
+  .profile-info {
+    margin-bottom: 20px;
+  }
+
+  .profile-forsale,
+  .profile-bio {
+    margin-right: 20px;
+  }
+
+  .profile-forsale a,
+  .profile-forsale p {
+    font-size: 1rem;
+  }
+
+  .profile-container {
+    flex-wrap: wrap;
+  }
+
+  .games-hr {
+    display: none;
   }
 
   /* Add to cart overlay */
@@ -149,6 +164,23 @@
     max-width: 200px;
   }
 
+  @media only screen and (max-width: 404px) {
+    /* profile page */
+
+    .profile-container {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .profile-bio p {
+      font-size: 1rem;
+    }
+
+    .profile-hr {
+      display: none;
+    }
+  }
+
   @media only screen and (max-width: 374px) {
     /* login details */
 
@@ -157,9 +189,19 @@
       gap: 0px;
     }
 
+    /* Product page */
+
+    .add-cart-cta-product {
+      font-size: 1.2rem;
+    }
+
     .create-finish-btn {
       font-size: 1.1rem;
     }
+
+    /* profile page */
+
+    /* Games page */
 
     /* contact form */
 

@@ -7,6 +7,7 @@
     <script src="https://kit.fontawesome.com/3085842107.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.typekit.net/vsr7unr.css" />
     <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/logincreate.css" />
     <link rel="stylesheet" href="/css/search.css" />
     <link rel="stylesheet" href="/css/bodystyles.css" />
     <link rel="stylesheet" href="/css/product.css" />
@@ -14,11 +15,17 @@
     <title>Games - Racing</title>
   </head>
   <header>
+    
+    <!-- logo -->
+
     <div class="container">
       <div class="row space-between">
         <div class="logo">
           <img src="/images/GameHub_Logo.png" alt="gamehub logo" />
         </div>
+
+        <!-- top nav -->
+
         <div class="nav-container column">
           <nav class="nav-top">
             <ul>
@@ -36,13 +43,16 @@
                   <a href="login.html"><span class="fas fa-user"></span></a>
                   <div class="dropdown-profile-content">
                     <a href="my_profile.html">My Profile</a>
-                    <a href="log_in.html">Log in</a>
-                    <a href="create_user.html">Create User</a>
+                    <a href="#profileClick">Log in</a>
+                    <a href="#profileCreate">Create User</a>
                   </div>
                 </div>
               </li>
             </ul>
           </nav>
+
+          <!-- main nav -->
+
           <nav class="nav-main">
             <ul>
               <li>
@@ -75,6 +85,9 @@
             <img src="/images/racing_cover.jpg" alt="black cover image" />
             <a href="#onClick" class="add-cart-cta-product">Add to Cart <span class="fas fa-arrow-right"></span></a>
           </div>
+
+          <!-- game info -->
+
           <section class="product-txt">
             <h3>Game information</h3>
             <p>Racing is a Single Player Racing simulator. Test your skills within Formel 1, Drifting or Street-Racing. Do you have what it takes to become the Number 1 racing driver?</p>
@@ -86,6 +99,8 @@
           </section>
         </div>
       </div>
+
+      <!-- footer -->
 
       <footer>
         <hr class="footer-hr" />
@@ -101,12 +116,95 @@
           <p>Phillip Mikalsen FT21 GameHub</p>
         </div>
       </footer>
+    </div> <!-- wrapper div -->
+
+      <!--Overlays-->
+
+      <!-- Log in -->
+
+      <div id="profileClick" class="profile-overlay">
+        <div class="profile-popup">
+          <div class="sign-create-btn-container">
+            <a class="signin-btn-top" href="#profileClick">Sign In </a>
+            <a class="signup-btn-top" href="#profileCreate">Create User</a>
+          </div>
+          <div class="profile-log-container">
+            <form action="action_page.php" method="post">
+              <label for="email" class="login-txt">Email</label>
+              <input type="text" class="login-box" name="email" required />
+              <label for="password" class="login-txt">Password</label>
+              <input type="password" class="login-box" name="password" required />
+              <label class="checkbox-container"
+                >Remember Me
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+            </form>
+            <div class="login-btn-container">
+              <a href="#" class="signin-btn">Sign In</a>
+              <a href="#" class="password-btn">Forgotten password</a>
+            </div>
+          </div>
+          <a class="close-profileOverlay" href="#">&times;</a>
+        </div>
+      </div>
+
+       <!-- Create user Overlay -->
+
+       <div id="profileCreate" class="profile-overlay">
+        <div class="profile-popup">
+          <div class="sign-create-btn-container">
+            <a class="signin-btn-top" href="#profileClick">Sign In </a>
+            <a class="signup-btn-top" href="#profileCreate">Create User</a>
+          </div>
+          <div class="create-profile-container">
+            <form action="action_page.php" method="post">
+              <fieldset class="create-field">
+                <div class="create-row-container">
+                  <label for="fname" class="create-txt">Full name</label>
+                  <input type="text" name="fname" class="create-details" required />
+                </div>
+                <div class="create-row-container">
+                  <label for="usname" class="create-txt">User name</label>
+                  <input type="text" name="lname" class="create-details" required />
+                </div>
+                <div class="create-row-container">
+                  <label for="address" class="create-txt">Address</label>
+                  <input type="text" name="address" class="create-details" required />
+                </div>
+                <div class="create-row-container">
+                  <label for="country" class="create-txt">Country</label>
+                  <input type="text" name="country" class="create-details" required />
+                </div>
+                <div class="create-row-container">
+                  <label for="postal" class="create-txt">ZIP/Postal</label>
+                  <input type="tel" name="postal" class="create-details" required />
+                </div>
+                <div class="create-row-container">
+                  <label for="email" class="create-txt">Email</label>
+                  <input type="email" name="email" class="create-details" required />
+                </div>
+                <div class="create-row-container">
+                  <label for="password" class="create-txt">Password</label>
+                  <input type="password" name="password" class="create-details" required />
+                </div>
+              </fieldset>
+              <div class="create-finish-container">
+                <input type="submit" class="create-finish-btn" value="Create user profile"></input>
+              </div>
+            </form>
+            <a href="#" class="close-profileOverlay">&times;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Game added overlay  -->
+
       <div id="onClick" class="added-overlay">
         <div class="added-popup">
           <h5>Added game to Shopping Cart</h5>
           <a class="closeOverlay" href="#">&times;</a>
         </div>
       </div>
-    </div>
   </body>
 </html>

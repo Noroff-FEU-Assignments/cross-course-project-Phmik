@@ -17,10 +17,7 @@
   padding: 5px;
 }
 
-.fa-search:hover {
-  color: #41a535;
-}
-
+.fa-search:hover,
 .fa-plus:hover {
   color: #41a535;
 }
@@ -52,8 +49,6 @@
   background: #fff;
   border-radius: 10px;
   padding-left: 20px;
-  font-family: proxima-nova, sans-serif;
-  font-weight: 400;
   font-style: normal;
   font-size: 1rem;
 }

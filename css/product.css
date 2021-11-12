@@ -41,14 +41,12 @@
   color: #fff;
   max-width: 376px;
   padding: 10px;
-  margin: -5px 0;
+  margin: -6px 0;
   text-decoration: none;
   transition: 0.4s;
   color: #fff;
   border: 2px solid #41a535;
-  font-family: proxima-nova;
   font-weight: 500;
-  font-style: normal;
   font-size: 1.5rem;
   justify-content: center;
 }
@@ -96,9 +94,7 @@
 }
 
 .added-popup h5 {
-  font-family: proxima-nova, sans-serif;
   font-weight: 500;
-  font-style: normal;
   font-size: 1.8rem;
   color: #fff;
 }

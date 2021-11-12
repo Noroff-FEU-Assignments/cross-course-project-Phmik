@@ -3,18 +3,22 @@
   display: flex;
   border: 2px solid #41a535;
   color: #fff;
-  max-width: 220px;
-  padding: 10px;
-  margin: -5px 0;
+  padding: 10px 0px;
+  margin: -6px 0 6px;
   text-decoration: none;
   transition: 0.4s;
   color: #fff;
   border: 2px solid #41a535;
-  font-family: proxima-nova;
   font-weight: 500;
-  font-style: normal;
   font-size: 1.2rem;
   justify-content: center;
+  max-width: 400px;
+}
+
+.img-games-row {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
 }
 
 .add-cart-cta {
@@ -60,9 +64,7 @@
 }
 
 .added-popup h5 {
-  font-family: proxima-nova, sans-serif;
   font-weight: 500;
-  font-style: normal;
   font-size: 1.8rem;
   color: #fff;
 }
@@ -80,4 +82,8 @@
 
 .added-popup .closeOverlay:hover {
   color: #41a535;
+}
+
+.games-hr {
+  margin-bottom: 15px;
 }
