@@ -49,8 +49,11 @@
   background: #fff;
   border-radius: 10px;
   padding-left: 20px;
-  font-style: normal;
   font-size: 1rem;
+}
+
+.sell-search::placeholder {
+  font-size: 0.8rem;
 }
 
 .sell-row-container {

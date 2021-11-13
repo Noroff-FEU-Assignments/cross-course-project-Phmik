@@ -128,13 +128,17 @@
 
   /* Add to cart overlay */
 
-  .added-popup {
-    max-width: 300px;
-  }
   .added-popup h5 {
+    font-size: 1.25rem;
+  }
+
+  .added-popup a {
     font-size: 1rem;
   }
 
+  .overlay-row-container {
+    gap: 50px;
+  }
   /* login details phone */
 
   .signin-btn-top,
@@ -198,10 +202,6 @@
     .create-finish-btn {
       font-size: 1.1rem;
     }
-
-    /* profile page */
-
-    /* Games page */
 
     /* contact form */
 
