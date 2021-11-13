@@ -168,6 +168,12 @@
     max-width: 200px;
   }
 
+  /* checkout page */
+
+  .billing-container {
+    flex-wrap: wrap;
+  }
+
   @media only screen and (max-width: 404px) {
     /* profile page */
 
@@ -191,6 +197,10 @@
     .create-row-container {
       flex-direction: column;
       gap: 0px;
+    }
+
+    .profile-popup .close-profileOverlay {
+      margin-left: -20px;
     }
 
     /* Product page */

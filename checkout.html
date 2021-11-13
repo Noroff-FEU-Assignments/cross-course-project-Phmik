@@ -8,15 +8,13 @@
     <link rel="stylesheet" href="https://use.typekit.net/vsr7unr.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/logincreate.css" />
+    <link rel="stylesheet" href="css/checkout.css" />
     <link rel="stylesheet" href="css/search.css" />
     <link rel="stylesheet" href="css/bodystyles.css" />
-    <link rel="stylesheet" href="css/games.css" />
     <link rel="stylesheet" href="css/medias.css" />
-
-    <title>Games</title>
+    <title>Shopping Cart</title>
   </head>
   <header>
-
     <!-- logo -->
 
     <div class="container">
@@ -32,18 +30,18 @@
             <ul>
               <li>
                 <div class="search-box">
-                  <input class="search-txt" type="text" name="" placeholder="Search game.." />
+                  <input class="search-txt" type="text" name="" placeholder="Search game.." action="get" />
                   <a href="#" class="search-btn"><span class="fas fa-search"></span></a>
                 </div>
               </li>
               <li>
-                <a href="checkout.html"><span class="fas fa-shopping-cart"></span></a>
+                <a href="checkout.html" class="active"><span class="fas fa-shopping-cart"></span></a>
               </li>
               <li>
                 <div class="dropdown-profile">
-                  <a href="login.html"><span class="fas fa-user"></span></a>
+                  <a href="profile/profile.html"><span class="fas fa-user"></span></a>
                   <div class="dropdown-profile-content">
-                    <a href="my_profile.html">My Profile</a>
+                    <a href="profile/profile.html">My Profile</a>
                     <a href="#profileClick">Log in</a>
                     <a href="#profileCreate">Create User</a>
                   </div>
@@ -63,7 +61,7 @@
                 <a href="marketplace.html"><span class="fas fa-store"></span> <span class="nav-text">Marketplace</span></a>
               </li>
               <li>
-                <a href="games.html" class="active"><span class="fas fa-gamepad"></span> <span class="nav-text">Games</span></a>
+                <a href="games.html"><span class="fas fa-gamepad"></span> <span class="nav-text">Games</span></a>
               </li>
               <li>
                 <a href="contact.html"><span class="fas fa-envelope"></span> <span class="nav-text">Contact</span></a>
@@ -77,114 +75,131 @@
   <body>
     <div class="content-wrapper">
       <section class="home-info">
-        <h1>Games</h1>
+        <h1>Checkout</h1>
+        <hr class="headline-hr">
       </section>
 
-      <!-- game info -->
+      <!-- billing info --> 
 
-      <hr class="headline-hr" />
-      <section class="home-games">
-        <div class="games-content">
-          <h3>Black</h3>
-          <hr class="games-hr" />
-          <div class="more-info-container">
-            <div class="img-games-row"><img src="images/black_cover.jpg" alt="black cover image" /></div>
-            <a href="#onClick" class="add-cart-cta">Add to Cart <span class="fas fa-arrow-right"></span></a>
-            <p>Black is a single player zombie game, how long can you last?...Througout many waves of incoming zombie from the apocalypse, can you handle them all?</p>
-            <a href="products/black.html" class="product-more-info">More info</a>
-          </div>
-        </div>
-        <div class="games-content">
-          <h3>Assassin</h3>
-          <hr class="games-hr" />
-          <div class="more-info-container">
-            <div class="img-games-row">
-              <img src="images/assassin_cover.jpg" alt="Assassin cover image" />
-              <a href="#onClick" class="add-cart-cta">Add to Cart <span class="fas fa-arrow-right"></span></a>
-            </div>
-            <p>Are you silent enough to make it through this hard sneaking... game? You are a trained ninja where you have mastered the arts of swords and assassination.</p>
-            <a href="products/assassin.html" class="product-more-info">More info</a>
-          </div>
-        </div>
-        <div class="games-content">
-          <h3>Racing</h3>
-          <hr class="games-hr" />
-          <div class="more-info-container">
-            <div class="img-games-row">
-              <img src="images/racing_cover.jpg" alt="Racing cover image" />
-            </div>
-            <a href="#onClick" class="add-cart-cta">Add to Cart <span class="fas fa-arrow-right"></span></a>
-            <p>Racing is a Single Player Racing simulator. Test your skills within Formel 1, Drifting or Street-Racing. Do you have what it takes to become the Number 1 racing driver?</p>
-            <a href="products/racing.html" class="product-more-info">More info</a>
-          </div>
-        </div>
-      </section>
-      <section class="home-games">
-        <div class="games-content">
-          <h3>Boxer</h3>
-          <hr class="games-hr" />
-          <div class="more-info-container">
-            <div class="img-games-row">
-              <img src="images/boxer_cover.jpg" alt="Racing cover image" />
-            </div>
-            <a href="#onClick" class="add-cart-cta">Add to Cart <span class="fas fa-arrow-right"></span></a>
-            <p>Boxer is a realistic fighting game. Make your way to the top through the career mode. Beat your friends in a Versus Battle. So you won't do it in real life!</p>
-            <a href="products/boxer.html" class="product-more-info">More info</a>
-          </div>
-        </div>
-        <div class="games-content">
-          <h3>Space War</h3>
-          <hr class="games-hr" />
-          <div class="more-info-container">
-            <div class="img-games-row">
-              <img src="images/space_war_cover.jpg" alt="Racing cover image" />
-            </div>
-            <a href="#onClick" class="add-cart-cta">Add to Cart <span class="fas fa-arrow-right"></span></a>
-            <p>Space war is a multiplayer game about conquering different planets in our universe. Can you outtake the Space Keepers and conquer all the planets?</p>
-            <a href="products/space_war.html" class="product-more-info">More info</a>
-          </div>
-        </div>
-        <div class="games-content">
-          <h3>CyberPunk</h3>
-          <hr class="games-hr" />
-          <div class="more-info-container">
-            <div class="img-games-row">
-              <img src="images/cyberpunk_cover.jpg" alt="Racing cover image" />
-            </div>
-            <a href="#onClick" class="add-cart-cta">Add to Cart <span class="fas fa-arrow-right"></span></a>
-            <p>Cyber Punk is a multiplayer RPG where you og around the world and collecting different types of materials to build your own small empire and weaponry.</p>
-            <a href="products/cyberpunk.html" class="product-more-info">More info</a>
-          </div>
-        </div>
-      </section>
+        <div class="billing-container">
+          <section class="billing-info">
+            <h2>Billing information</h2>
+          <hr class="billing-hr">
+          <form action="#">
+          <fieldset class="billingForm">
+              <label for="fname" class="checkout-txt">Full name</label>
+              <input type="text" id="fname" name="your name" class="checkout-details" required>
+              <label for="address" class="checkout-txt">Address</label>
+              <input type="text" id="address" name="your address" class="checkout-details" required>
+              <label for="country" class="checkout-txt">Country</label>
+              <input type="text" id="country" name="your country" class="checkout-details" required>
+              <label for="city" class="checkout-txt">City</label>
+              <input type="text" id="city" name="your city" class="checkout-details" required>
+              <label for="postal" class="checkout-txt">ZIP/Postal</label>
+              <input type="tel" id="postal" name="your postal zip" class="checkout-details" required> 
+            </fieldset>
+          </form>  
+        </section>
+        
+      <!-- delivery info -->
 
-      <!-- footer -->
+        <section class="delivery-info">
+          <h2>Delivery Method</h2>
+          <hr class="billing-hr">
+            <form action="#">
+            <label  class="checkout-radio">
+              Home Delivery
+              <input type="radio" name="radio" id="homeDelivery">
+            </label>
+            <p class="delivery-price"><em>Price: 9$</em></p>
+            <label  class="checkout-radio">
+              Postal office
+              <input type="radio" name="radio" id="postalDelivery">
+            </label>  
+            </form>
+            <p class="delivery-price"><em>Price: 5$</em></p>
 
-      <footer>
-        <hr class="footer-hr" />
-        <nav class="footer-nav">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="marketplace.html">Marketplace</a></li>
-            <li><a href="games.html">Games</a></li>
-            <li><a href="contact.html">Contact us</a></li>
-          </ul>
-        </nav>
-        <div class="bottom-container">
-          <p>Phillip Mikalsen FT21 GameHub</p>
-        </div>
-      </footer>
-    </div> <!-- wrapper div -->
+            <!-- payment info -->
 
+            <section class="payment-information">
+              <hr class="billing-hr">
+              <h2>Payment information</h2>
+              
+              <form action="#">
+                <label class="checkout-radio">
+                  PayPal
+                  <input type="radio" name="radio" id="paypal">
+                </label>
+                <div class=""></div>
+                <label  class="checkout-radio">
+                  Credit/Debit card
+                  <input type="radio" name="radio" id="credit-card">
+                </label>  
+              </form>
+            </section>
+
+            <!-- Payment details -->
+
+            <section class="payment-details">
+              <hr class="billing-hr">
+              <h2>Payment details</h2>
+              
+              <form action="#">
+                <fieldset class="billingForm">
+                  <label for="card-number">Card number</label>
+                  <input type="tel" name="card-number" id="card-info" class="checkout-details" required>
+                  <label for="ExpMon">Expiration Date</label>
+                  <select name="ExpMon" id="month-info" class="checkout-details" required>
+                    <option value="1">Jan</option>
+                    <option value="2">Feb</option>
+                    <option value="3">Mar</option>
+                    <option value="4">Apr</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">Aug</option>
+                    <option value="9">Sep</option>
+                    <option value="10">Okt</option>
+                    <option value="11">Nov</option>
+                    <option value="12">Des</option>
+                  </select>
+                  <select name="ExpYear" id="year-info" class="checkout-details" required>
+                    <option value="1">2021</option>
+                    <option value="2">2022</option>
+                    <option value="3">2023</option>
+                    <option value="4">2024</option>
+                    <option value="5">2025</option>
+                  </select>
+                  <label for="CVC">CVC number</label>
+                  <input type="tel" name="CVC" id="cvc-info" class="checkout-details">
+                </fieldset>
+              </form>
+              <input type="button" id="forwardProceed" class="proceed-btn" value="Checkout">
+            </section>
+          </div>
+          <footer>
+            <hr class="footer-hr" />
+            <nav class="footer-nav">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="marketplace.html">Marketplace</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+              </ul>
+            </nav>
+            <div class="bottom-container">
+              <p>Phillip Mikalsen FT21 GameHub</p>
+            </div>
+          </footer>
+    </div> <!-- Wrapper div -->
+      
       <!--Overlays-->
 
       <!-- Log in -->
 
       <div id="profileClick" class="profile-overlay">
         <div class="profile-popup">
-          
           <div class="sign-create-btn-container">
-            
             <a class="signin-btn-top" href="#profileClick">Sign In </a>
             <a class="signup-btn-top" href="#profileCreate">Create User</a>
             <a href="#" class="close-profileOverlay">&times;</a>
@@ -206,7 +221,6 @@
               <a href="#" class="password-btn">Forgotten password</a>
             </div>
           </div>
-          
         </div>
       </div>
 
@@ -254,19 +268,7 @@
               <div class="create-finish-container">
                 <input type="submit" class="create-finish-btn" value="Create user profile"></input>
               </div>
-            </form> 
-          </div>
-        </div>
-      </div>
-
-      <!-- Game added overlay  -->
-
-      <div id="onClick" class="added-overlay">
-        <div class="added-popup">
-          <a class="closeOverlay" href="#">&times;</a>
-          <div class="overlay-row-container">
-            <h5>Added game to Shopping Cart</h5>
-            <a href="checkout.html">Take me to my shopping cart</a>
+            </form>
           </div>
         </div>
       </div>
