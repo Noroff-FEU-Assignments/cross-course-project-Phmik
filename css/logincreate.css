@@ -50,10 +50,7 @@
   transition: 0.4s;
 }
 
-#profileClick .signin-btn-top {
-  color: #41a535;
-}
-
+#profileClick .signin-btn-top,
 #profileCreate .signup-btn-top {
   color: #41a535;
 }

@@ -124,19 +124,17 @@
 
       <div id="profileClick" class="profile-overlay">
         <div class="profile-popup">
-          
           <div class="sign-create-btn-container">
-            
             <a class="signin-btn-top" href="#profileClick">Sign In </a>
             <a class="signup-btn-top" href="#profileCreate">Create User</a>
             <a href="#" class="close-profileOverlay">&times;</a>
           </div>
           <div class="profile-log-container">
-            <form action="action_page.php" method="post">
+            <form action="#" method="post">
               <label for="email" class="login-txt">Email</label>
-              <input type="text" class="login-box" name="email" required />
-              <label for="password" class="login-txt">Password</label>
-              <input type="password" class="login-box" name="password" required />
+              <input type="text" class="login-box" name="mail" id="email" required />
+              <label for="password-login" class="login-txt">Password</label>
+              <input type="password" class="login-box" name="pw" id="password-login" required />
               <label class="checkbox-container"
                 >Remember Me
                 <input type="checkbox" />
@@ -162,35 +160,35 @@
             <a href="#" class="close-profileOverlay">&times;</a>
           </div>
           <div class="create-profile-container">
-            <form action="action_page.php" method="post">
+            <form action="#" method="post">
               <fieldset class="create-field">
                 <div class="create-row-container">
                   <label for="fname" class="create-txt">Full name</label>
-                  <input type="text" name="fname" class="create-details" required />
+                  <input type="text" name="f-name" class="create-details" id="full-name" required />
                 </div>
                 <div class="create-row-container">
-                  <label for="usname" class="create-txt">User name</label>
-                  <input type="text" name="lname" class="create-details" required />
+                  <label for="user-name" class="create-txt">User name</label>
+                  <input type="text" name="usname" class="create-details" id="user-name" required />
                 </div>
                 <div class="create-row-container">
                   <label for="address" class="create-txt">Address</label>
-                  <input type="text" name="address" class="create-details" required />
+                  <input type="text" name="address" class="create-details" id="address" required />
                 </div>
                 <div class="create-row-container">
                   <label for="country" class="create-txt">Country</label>
-                  <input type="text" name="country" class="create-details" required />
+                  <input type="text" name="country" class="create-details" id="country" required />
                 </div>
                 <div class="create-row-container">
                   <label for="postal" class="create-txt">ZIP/Postal</label>
-                  <input type="tel" name="postal" class="create-details" required />
+                  <input type="tel" name="postal-zip" class="create-details" id="postal" required />
                 </div>
                 <div class="create-row-container">
                   <label for="email" class="create-txt">Email</label>
-                  <input type="email" name="email" class="create-details" required />
+                  <input type="email" name="mail" class="create-details" id="email" required />
                 </div>
                 <div class="create-row-container">
-                  <label for="password" class="create-txt">Password</label>
-                  <input type="password" name="password" class="create-details" required />
+                  <label for="password-create" class="create-txt">Password</label>
+                  <input type="password" name="pw" class="create-details" id="password-create" required />
                 </div>
               </fieldset>
               <div class="create-finish-container">
@@ -200,7 +198,6 @@
           </div>
         </div>
       </div>
-
       <!-- Game added overlay  -->
 
       <div id="onClick" class="added-overlay">

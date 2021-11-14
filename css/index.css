@@ -50,7 +50,8 @@
   text-decoration: underline;
 }
 
-.added-popup a:hover {
+.added-popup a:hover,
+.added-popup .closeOverlay:hover {
   color: #41a535;
 }
 
@@ -62,8 +63,4 @@
   text-decoration: none;
   font-weight: 800;
   color: #fff;
-}
-
-.added-popup .closeOverlay:hover {
-  color: #41a535;
 }

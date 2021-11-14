@@ -22,10 +22,7 @@
   color: #41a535;
 }
 
-.sell-product {
-  display: none;
-}
-
+.sell-product,
 #sell-plus {
   display: none;
 }
@@ -44,8 +41,6 @@
   width: 100%;
   max-width: 250px;
   height: 40px;
-  border: none;
-  outline: none;
   background: #fff;
   border-radius: 10px;
   padding-left: 20px;

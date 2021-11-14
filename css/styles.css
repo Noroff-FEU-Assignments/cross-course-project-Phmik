@@ -14,6 +14,20 @@ body {
   margin: 0 auto;
 }
 
+input,
+fieldset,
+form,
+option,
+select,
+textarea {
+  outline: none;
+  border: none;
+}
+
+li {
+  list-style: none;
+}
+
 h1,
 h2 {
   margin: 1rem 0 1rem 35px;
@@ -104,14 +118,12 @@ img {
 }
 
 .nav-top li {
-  list-style: none;
   display: inline-block;
   padding: 10px 30px 10px 0;
   font-size: 2rem;
 }
 
 .nav-main li {
-  list-style: none;
   display: inline-block;
   text-transform: uppercase;
   margin: 10px auto;

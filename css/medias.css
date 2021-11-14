@@ -29,7 +29,6 @@
   }
 
   .nav-top li {
-    list-style: none;
     display: inline-block;
     padding: 10px 30px 10px 0;
     font-size: 2rem;
@@ -41,7 +40,6 @@
   }
 
   .nav-main li {
-    list-style: none;
     display: inline-block;
     font-size: 1.5rem;
     padding: 10px 11px 0px 0px;
@@ -227,10 +225,24 @@
     .input-contact,
     .label-contact,
     .textarea-contact {
-      max-width: 250px;
+      max-width: 270px;
     }
     .submit-contact {
       max-width: 270px;
+    }
+
+    /* Checkout page */
+
+    .payment-details,
+    .delivery-info,
+    .billing-info {
+      max-width: 260px;
+    }
+
+    /* success page */
+
+    .success-content a {
+      font-size: 1rem;
     }
   }
 }

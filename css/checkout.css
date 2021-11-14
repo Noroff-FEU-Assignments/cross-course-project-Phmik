@@ -4,6 +4,7 @@ h2 {
 }
 
 .billing-hr {
+  margin-top: 1rem;
   border: solid 1px #fff;
   width: 300px;
 }
@@ -25,30 +26,22 @@ h2 {
   color: #fff;
   display: flex;
   flex-direction: column;
-  outline: none;
-  border: none;
 }
 
 .billingForm input {
-  border: none;
-  outline: none;
   height: 40px;
   border-radius: 5px;
   margin: 10px 0px;
-}
-
-.checkout-details:hover {
-  background-color: #ddd;
-}
-
-.checkout-txt {
-  font-size: 1.2rem;
 }
 
 .checkout-details {
   padding: 0px 0px 0px 5px;
   font-weight: 500;
   font-size: 1rem;
+}
+
+.checkout-txt {
+  font-size: 1.2rem;
 }
 
 .proceed-btn {
@@ -59,12 +52,7 @@ h2 {
   border: solid 1px #41a535;
   padding: 10px;
   border-radius: 10px;
-}
-
-.proceed-btn:hover {
-  color: #fff;
-  background-color: #41a535;
-  transition-duration: 0.4s;
+  cursor: pointer;
 }
 
 /* checkout text + radio button */
@@ -119,16 +107,25 @@ input[type="radio"]:checked::before {
   transform: scale(1);
 }
 
-input[type="radio"]:hover {
+/* Hover effects */
+
+input[type="radio"]:hover,
+.checkout-details:hover {
   background-color: #ddd;
+}
+
+.proceed-btn:hover {
+  color: #fff;
+  background-color: #41a535;
+  transition-duration: 0.4s;
 }
 
 /* Payment */
 
 #month-info,
 #year-info {
-  border: none;
-  outline: none;
+  font-weight: 800;
+  text-transform: uppercase;
   margin-top: 10px;
   padding: 10px;
   background: #fff;

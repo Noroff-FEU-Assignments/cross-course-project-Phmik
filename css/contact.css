@@ -67,7 +67,7 @@
 
 /* contact form */
 
-form {
+.contact-form {
   max-width: 402px;
 }
 
@@ -92,8 +92,13 @@ form {
   margin-left: 16px;
   border-radius: 5px;
   font-size: 1rem;
-  border: none;
-  outline: none;
+}
+
+.label-contact:hover,
+.input-contact:hover,
+.submit-contact:hover,
+.textarea-contact:hover {
+  background-color: #ddd;
 }
 
 .submit-contact {

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/search.css" />
     <link rel="stylesheet" href="css/bodystyles.css" />
     <link rel="stylesheet" href="css/medias.css" />
-    <title>Shopping Cart</title>
+    <title>Checkout</title>
   </head>
   <header>
     <!-- logo -->
@@ -143,40 +143,44 @@
             <section class="payment-details">
               <hr class="billing-hr">
               <h2>Payment details</h2>
-              
               <form action="#">
                 <fieldset class="billingForm">
                   <label for="card-number">Card number</label>
                   <input type="tel" name="card-number" id="card-info" class="checkout-details" required>
                   <label for="ExpMon">Expiration Date</label>
                   <select name="ExpMon" id="month-info" class="checkout-details" required>
-                    <option value="1">Jan</option>
-                    <option value="2">Feb</option>
-                    <option value="3">Mar</option>
-                    <option value="4">Apr</option>
-                    <option value="5">May</option>
-                    <option value="6">June</option>
-                    <option value="7">July</option>
-                    <option value="8">Aug</option>
-                    <option value="9">Sep</option>
-                    <option value="10">Okt</option>
-                    <option value="11">Nov</option>
-                    <option value="12">Des</option>
+                    <option value="1">--</option>
+                    <option value="2">Jan</option>
+                    <option value="3">Feb</option>
+                    <option value="4">Mar</option>
+                    <option value="5">Apr</option>
+                    <option value="6">May</option>
+                    <option value="7">June</option>
+                    <option value="8">July</option>
+                    <option value="9">Aug</option>
+                    <option value="10">Sep</option>
+                    <option value="11">Okt</option>
+                    <option value="12">Nov</option>
+                    <option value="13">Des</option>
                   </select>
-                  <select name="ExpYear" id="year-info" class="checkout-details" required>
-                    <option value="1">2021</option>
-                    <option value="2">2022</option>
-                    <option value="3">2023</option>
-                    <option value="4">2024</option>
-                    <option value="5">2025</option>
+                  <select name="ExpYear" id="year-info" class="checkout-details" >
+                    <option value="1">--</option>
+                    <option value="2" aria-required="true">2021</option>
+                    <option value="3">2022</option>
+                    <option value="4">2023</option>
+                    <option value="5">2024</option>
+                    <option value="6">2025</option>
                   </select>
                   <label for="CVC">CVC number</label>
-                  <input type="tel" name="CVC" id="cvc-info" class="checkout-details">
+                  <input type="tel" name="CVC" id="cvc-info" class="checkout-details" required>
                 </fieldset>
+                <a href="/checkout_success.html"><input type="button" id="forwardProceed" class="proceed-btn" value="Checkout"></a>
               </form>
-              <input type="button" id="forwardProceed" class="proceed-btn" value="Checkout">
             </section>
           </div>
+
+          <!-- footer -->
+
           <footer>
             <hr class="footer-hr" />
             <nav class="footer-nav">
@@ -205,11 +209,11 @@
             <a href="#" class="close-profileOverlay">&times;</a>
           </div>
           <div class="profile-log-container">
-            <form action="action_page.php" method="post">
+            <form action="#" method="post">
               <label for="email" class="login-txt">Email</label>
-              <input type="text" class="login-box" name="email" required />
-              <label for="password" class="login-txt">Password</label>
-              <input type="password" class="login-box" name="password" required />
+              <input type="text" class="login-box" name="mail" id="email" required />
+              <label for="password-login" class="login-txt">Password</label>
+              <input type="password" class="login-box" name="pw" id="password-login" required />
               <label class="checkbox-container"
                 >Remember Me
                 <input type="checkbox" />
@@ -221,6 +225,7 @@
               <a href="#" class="password-btn">Forgotten password</a>
             </div>
           </div>
+          
         </div>
       </div>
 
@@ -234,35 +239,35 @@
             <a href="#" class="close-profileOverlay">&times;</a>
           </div>
           <div class="create-profile-container">
-            <form action="action_page.php" method="post">
+            <form action="#" method="post">
               <fieldset class="create-field">
                 <div class="create-row-container">
                   <label for="fname" class="create-txt">Full name</label>
-                  <input type="text" name="fname" class="create-details" required />
+                  <input type="text" name="f-name" class="create-details" id="full-name" required />
                 </div>
                 <div class="create-row-container">
-                  <label for="usname" class="create-txt">User name</label>
-                  <input type="text" name="lname" class="create-details" required />
+                  <label for="user-name" class="create-txt">User name</label>
+                  <input type="text" name="usname" class="create-details" id="user-name" required />
                 </div>
                 <div class="create-row-container">
                   <label for="address" class="create-txt">Address</label>
-                  <input type="text" name="address" class="create-details" required />
+                  <input type="text" name="address" class="create-details" id="address" required />
                 </div>
                 <div class="create-row-container">
                   <label for="country" class="create-txt">Country</label>
-                  <input type="text" name="country" class="create-details" required />
+                  <input type="text" name="country" class="create-details" id="country" required />
                 </div>
                 <div class="create-row-container">
                   <label for="postal" class="create-txt">ZIP/Postal</label>
-                  <input type="tel" name="postal" class="create-details" required />
+                  <input type="tel" name="postal-zip" class="create-details" id="postal" required />
                 </div>
                 <div class="create-row-container">
                   <label for="email" class="create-txt">Email</label>
-                  <input type="email" name="email" class="create-details" required />
+                  <input type="email" name="mail" class="create-details" id="email" required />
                 </div>
                 <div class="create-row-container">
-                  <label for="password" class="create-txt">Password</label>
-                  <input type="password" name="password" class="create-details" required />
+                  <label for="password-create" class="create-txt">Password</label>
+                  <input type="password" name="pw" class="create-details" id="password-create" required />
                 </div>
               </fieldset>
               <div class="create-finish-container">
