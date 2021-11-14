@@ -17,190 +17,192 @@
     <link rel="stylesheet" href="css/medias.css" />
     <title>Checkout</title>
   </head>
-  <header>
-    <!-- logo -->
+  <body>
+    <header>
+      <!-- logo -->
 
-    <div class="container">
-      <div class="row space-between">
-        <div class="logo">
-          <img src="images/GameHub_Logo.png" alt="gamehub logo" />
-        </div>
+      <div class="container">
+        <div class="row space-between">
+          <div class="logo">
+            <img src="images/GameHub_Logo.png" alt="gamehub logo" />
+          </div>
 
-        <!-- top nav -->
+          <!-- top nav -->
 
-        <div class="nav-container column">
-          <nav class="nav-top">
-            <ul>
-              <li>
-                <div class="search-box">
-                  <input class="search-txt" type="text" name="search-nav" placeholder="Search game.." />
-                  <a href="#" class="search-btn"><span class="fas fa-search"></span></a>
-                </div>
-              </li>
-              <li>
-                <a href="checkout.html" class="active"><span class="fas fa-shopping-cart"></span></a>
-              </li>
-              <li>
-                <div class="dropdown-profile">
-                  <a href="profile/profile.html"><span class="fas fa-user"></span></a>
-                  <div class="dropdown-profile-content">
-                    <a href="profile/profile.html">My Profile</a>
-                    <a href="#profileClick">Log in</a>
-                    <a href="#profileCreate">Create User</a>
+          <div class="nav-container column">
+            <nav class="nav-top">
+              <ul>
+                <li>
+                  <div class="search-box">
+                    <input class="search-txt" type="text" name="search-nav" placeholder="Search game.." />
+                    <a href="#" class="search-btn"><span class="fas fa-search"></span></a>
                   </div>
-                </div>
-              </li>
-            </ul>
-          </nav>
+                </li>
+                <li>
+                  <a href="checkout.html" class="active"><span class="fas fa-shopping-cart"></span></a>
+                </li>
+                <li>
+                  <div class="dropdown-profile">
+                    <a href="profile/profile.html"><span class="fas fa-user"></span></a>
+                    <div class="dropdown-profile-content">
+                      <a href="profile/profile.html">My Profile</a>
+                      <a href="#profileClick">Log in</a>
+                      <a href="#profileCreate">Create User</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </nav>
 
-          <!-- main nav -->
+            <!-- main nav -->
 
-          <nav class="nav-main">
-            <ul>
-              <li>
-                <a href="index.html"><span class="fas fa-home"></span> <span class="nav-text">Home</span></a>
-              </li>
-              <li>
-                <a href="marketplace.html"><span class="fas fa-store"></span> <span class="nav-text">Marketplace</span></a>
-              </li>
-              <li>
-                <a href="games.html"><span class="fas fa-gamepad"></span> <span class="nav-text">Games</span></a>
-              </li>
-              <li>
-                <a href="contact.html"><span class="fas fa-envelope"></span> <span class="nav-text">Contact</span></a>
-              </li>
-            </ul>
-          </nav>
+            <nav class="nav-main">
+              <ul>
+                <li>
+                  <a href="index.html"><span class="fas fa-home"></span> <span class="nav-text">Home</span></a>
+                </li>
+                <li>
+                  <a href="marketplace.html"><span class="fas fa-store"></span> <span class="nav-text">Marketplace</span></a>
+                </li>
+                <li>
+                  <a href="games.html"><span class="fas fa-gamepad"></span> <span class="nav-text">Games</span></a>
+                </li>
+                <li>
+                  <a href="contact.html"><span class="fas fa-envelope"></span> <span class="nav-text">Contact</span></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
-  <body>
-    <div class="content-wrapper">
-      <section class="home-info">
-        <h1>Checkout</h1>
-        <hr class="headline-hr" />
-      </section>
-
-      <!-- billing info -->
-
-      <div class="billing-container">
-        <section class="billing-info">
-          <h2>Billing information</h2>
-          <hr class="billing-hr" />
-          <form action="#">
-            <fieldset class="billingForm">
-              <label for="fname" class="checkout-txt">Full name</label>
-              <input type="text" id="fname" name="your name" class="checkout-details" required />
-              <label for="address-billing" class="checkout-txt">Address</label>
-              <input type="text" id="address-billing" name="your address" class="checkout-details" required />
-              <label for="country-billing" class="checkout-txt">Country</label>
-              <input type="text" id="country-billing" name="your country" class="checkout-details" required />
-              <label for="city" class="checkout-txt">City</label>
-              <input type="text" id="city" name="your city" class="checkout-details" required />
-              <label for="postal-billing" class="checkout-txt">ZIP/Postal</label>
-              <input type="tel" id="postal-billing" name="your postal zip" class="checkout-details" required />
-            </fieldset>
-          </form>
+    </header>
+    <main>
+      <div class="content-wrapper">
+        <section class="home-info">
+          <h1>Checkout</h1>
+          <hr class="headline-hr" />
         </section>
 
-        <!-- delivery info -->
+        <!-- billing info -->
 
-        <section class="delivery-info">
-          <h2>Delivery Method</h2>
-          <hr class="billing-hr" />
-          <form action="#">
-            <label class="checkout-radio">
-              Home Delivery
-              <input type="radio" name="radio" id="homeDelivery" />
-            </label>
-            <p class="delivery-price"><em>Price: 9$</em></p>
-            <label class="checkout-radio">
-              Postal office
-              <input type="radio" name="radio" id="postalDelivery" />
-            </label>
-          </form>
-          <p class="delivery-price"><em>Price: 5$</em></p>
-
-          <!-- payment info -->
-
-          <section class="payment-information">
+        <div class="billing-container">
+          <section class="billing-info">
+            <h2>Billing information</h2>
             <hr class="billing-hr" />
-            <h2>Payment information</h2>
-
-            <form action="#">
-              <label class="checkout-radio">
-                PayPal
-                <input type="radio" name="radio" id="paypal" />
-              </label>
-              <div class=""></div>
-              <label class="checkout-radio">
-                Credit/Debit card
-                <input type="radio" name="radio" id="credit-card" />
-              </label>
-            </form>
-          </section>
-
-          <!-- Payment details -->
-
-          <section class="payment-details">
-            <hr class="billing-hr" />
-            <h2>Payment details</h2>
             <form action="#">
               <fieldset class="billingForm">
-                <label for="cardNumber">Card number</label>
-                <input type="tel" name="card-number" id="cardNumber" class="checkout-details" required />
-                <label for="expMon">Expiration Date</label>
-                <select name="expiration-date" id="expMon" class="checkout-details">
-                  <option value="1">--</option>
-                  <option value="2">Jan</option>
-                  <option value="3">Feb</option>
-                  <option value="4">Mar</option>
-                  <option value="5">Apr</option>
-                  <option value="6">May</option>
-                  <option value="7">June</option>
-                  <option value="8">July</option>
-                  <option value="9">Aug</option>
-                  <option value="10">Sep</option>
-                  <option value="11">Okt</option>
-                  <option value="12">Nov</option>
-                  <option value="13">Des</option>
-                </select>
-                <select name="expiration-date" id="expYear" class="checkout-details">
-                  <option value="1">--</option>
-                  <option value="2">2021</option>
-                  <option value="3">2022</option>
-                  <option value="4">2023</option>
-                  <option value="5">2024</option>
-                  <option value="6">2025</option>
-                </select>
-                <label for="cvc">CVC number</label>
-                <input type="tel" name="CVC-number" id="cvc" class="checkout-details" required />
+                <label for="fname" class="checkout-txt">Full name</label>
+                <input type="text" id="fname" name="your name" class="checkout-details" required />
+                <label for="address-billing" class="checkout-txt">Address</label>
+                <input type="text" id="address-billing" name="your address" class="checkout-details" required />
+                <label for="country-billing" class="checkout-txt">Country</label>
+                <input type="text" id="country-billing" name="your country" class="checkout-details" required />
+                <label for="city" class="checkout-txt">City</label>
+                <input type="text" id="city" name="your city" class="checkout-details" required />
+                <label for="postal-billing" class="checkout-txt">ZIP/Postal</label>
+                <input type="tel" id="postal-billing" name="your postal zip" class="checkout-details" required />
               </fieldset>
-              <a href="/checkout_success.html" class="proceed-btn">Checkout</a>
             </form>
           </section>
-        </section>
-      </div>
 
-      <!-- footer -->
+          <!-- delivery info -->
 
-      <footer>
-        <hr class="footer-hr" />
-        <nav class="footer-nav">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="marketplace.html">Marketplace</a></li>
-            <li><a href="games.html">Games</a></li>
-            <li><a href="contact.html">Contact us</a></li>
-          </ul>
-        </nav>
-        <div class="bottom-container">
-          <p>Phillip Mikalsen FT21 GameHub</p>
+          <section class="delivery-info">
+            <h2>Delivery Method</h2>
+            <hr class="billing-hr" />
+            <form action="#">
+              <label class="checkout-radio">
+                Home Delivery
+                <input type="radio" name="radio" id="homeDelivery" />
+              </label>
+              <p class="delivery-price"><em>Price: 9$</em></p>
+              <label class="checkout-radio">
+                Postal office
+                <input type="radio" name="radio" id="postalDelivery" />
+              </label>
+            </form>
+            <p class="delivery-price"><em>Price: 5$</em></p>
+
+            <!-- payment info -->
+
+            <section class="payment-information">
+              <hr class="billing-hr" />
+              <h2>Payment information</h2>
+
+              <form action="#">
+                <label class="checkout-radio">
+                  PayPal
+                  <input type="radio" name="radio" id="paypal" />
+                </label>
+                <div class=""></div>
+                <label class="checkout-radio">
+                  Credit/Debit card
+                  <input type="radio" name="radio" id="credit-card" />
+                </label>
+              </form>
+            </section>
+
+            <!-- Payment details -->
+
+            <section class="payment-details">
+              <hr class="billing-hr" />
+              <h2>Payment details</h2>
+              <form action="#">
+                <fieldset class="billingForm">
+                  <label for="cardNumber">Card number</label>
+                  <input type="tel" name="card-number" id="cardNumber" class="checkout-details" required />
+                  <label for="expMon">Expiration Date</label>
+                  <select name="expiration-date" id="expMon" class="checkout-details">
+                    <option value="1">--</option>
+                    <option value="2">Jan</option>
+                    <option value="3">Feb</option>
+                    <option value="4">Mar</option>
+                    <option value="5">Apr</option>
+                    <option value="6">May</option>
+                    <option value="7">June</option>
+                    <option value="8">July</option>
+                    <option value="9">Aug</option>
+                    <option value="10">Sep</option>
+                    <option value="11">Okt</option>
+                    <option value="12">Nov</option>
+                    <option value="13">Des</option>
+                  </select>
+                  <select name="expiration-date" id="expYear" class="checkout-details">
+                    <option value="1">--</option>
+                    <option value="2">2021</option>
+                    <option value="3">2022</option>
+                    <option value="4">2023</option>
+                    <option value="5">2024</option>
+                    <option value="6">2025</option>
+                  </select>
+                  <label for="cvc">CVC number</label>
+                  <input type="tel" name="CVC-number" id="cvc" class="checkout-details" required />
+                </fieldset>
+                <a href="/checkout_success.html" class="proceed-btn">Checkout</a>
+              </form>
+            </section>
+          </section>
         </div>
-      </footer>
-    </div>
-    <!-- Wrapper div -->
+
+        <!-- footer -->
+
+        <footer>
+          <hr class="footer-hr" />
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="marketplace.html">Marketplace</a></li>
+              <li><a href="games.html">Games</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+            </ul>
+          </nav>
+          <div class="bottom-container">
+            <p>Phillip Mikalsen FT21 GameHub</p>
+          </div>
+        </footer>
+      </div>
+      <!-- Wrapper div -->
+    </main>
 
     <!--Overlays-->
 
