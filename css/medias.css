@@ -11,10 +11,7 @@
     color: #1b203d;
   }
 
-  .nav-main .active {
-    text-decoration: none;
-  }
-
+  .nav-main .active,
   .nav-main a:hover {
     text-decoration: none;
   }
@@ -224,9 +221,7 @@
 
     .input-contact,
     .label-contact,
-    .textarea-contact {
-      max-width: 270px;
-    }
+    .textarea-contact,
     .submit-contact {
       max-width: 270px;
     }

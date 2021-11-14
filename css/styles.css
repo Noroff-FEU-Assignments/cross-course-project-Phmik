@@ -194,7 +194,7 @@ img {
 
 /* hr lines end */
 
-/* Main content */
+/* Main content  home page */
 
 .home-content {
   display: flex;
@@ -297,6 +297,7 @@ img {
 }
 
 /* dropdown login top menu */
+
 .dropdown-profile {
   position: relative;
   display: inline-block;
