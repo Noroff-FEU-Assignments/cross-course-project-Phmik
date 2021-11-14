@@ -1,6 +1,4 @@
 .contact-img img {
-  width: 100%;
-  flex: 0 5 10rem;
   border-radius: 50%;
   max-height: 200px;
 }
