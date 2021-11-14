@@ -94,12 +94,12 @@
               <input type="text" id="fname" name="your name" class="checkout-details" required />
               <label for="address-billing" class="checkout-txt">Address</label>
               <input type="text" id="address-billing" name="your address" class="checkout-details" required />
-              <label for="country" class="checkout-txt">Country</label>
-              <input type="text" id="country" name="your country" class="checkout-details" required />
+              <label for="country-billing" class="checkout-txt">Country</label>
+              <input type="text" id="country-billing" name="your country" class="checkout-details" required />
               <label for="city" class="checkout-txt">City</label>
               <input type="text" id="city" name="your city" class="checkout-details" required />
-              <label for="postal" class="checkout-txt">ZIP/Postal</label>
-              <input type="tel" id="postal" name="your postal zip" class="checkout-details" required />
+              <label for="postal-billing" class="checkout-txt">ZIP/Postal</label>
+              <input type="tel" id="postal-billing" name="your postal zip" class="checkout-details" required />
             </fieldset>
           </form>
         </section>
@@ -148,10 +148,10 @@
             <h2>Payment details</h2>
             <form action="#">
               <fieldset class="billingForm">
-                <label for="card-number">Card number</label>
-                <input type="tel" name="card-number" id="card-info" class="checkout-details" required />
-                <label for="ExpMon">Expiration Date</label>
-                <select name="ExpMon" id="month-info" class="checkout-details">
+                <label for="cardNumber">Card number</label>
+                <input type="tel" name="card-number" id="cardNumber" class="checkout-details" required />
+                <label for="expMon">Expiration Date</label>
+                <select name="expiration-date" id="expMon" class="checkout-details">
                   <option value="1">--</option>
                   <option value="2">Jan</option>
                   <option value="3">Feb</option>
@@ -166,7 +166,7 @@
                   <option value="12">Nov</option>
                   <option value="13">Des</option>
                 </select>
-                <select name="ExpYear" id="year-info" class="checkout-details">
+                <select name="expiration-date" id="expYear" class="checkout-details">
                   <option value="1">--</option>
                   <option value="2">2021</option>
                   <option value="3">2022</option>
@@ -174,8 +174,8 @@
                   <option value="5">2024</option>
                   <option value="6">2025</option>
                 </select>
-                <label for="CVC">CVC number</label>
-                <input type="tel" name="CVC" id="cvc-info" class="checkout-details" required />
+                <label for="cvc">CVC number</label>
+                <input type="tel" name="CVC-number" id="cvc" class="checkout-details" required />
               </fieldset>
               <a href="/checkout_success.html" class="proceed-btn">Checkout</a>
             </form>
