@@ -8,7 +8,6 @@
   align-items: center;
   background-color: #1b203d;
   max-width: 1000px;
-  max-height: 1000px;
   background: linear-gradient(#1b203d, #41a535, #1b203d);
 }
 
@@ -25,6 +24,7 @@
 .success-content h1 {
   margin: 0;
   font-size: 1.7rem;
+  text-transform: uppercase;
 }
 
 .fa-check {
