@@ -53,6 +53,7 @@ h2 {
   padding: 10px;
   border-radius: 10px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 /* checkout text + radio button */

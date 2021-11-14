@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Checkout">
-    <meta name="keywords" content="Buy, sell, games, preorder">
-    <meta name="author" content="Phillip Mikalsen">
+    <meta name="description" content="Checkout" />
+    <meta name="keywords" content="Buy, sell, games, preorder" />
+    <meta name="author" content="Phillip Mikalsen" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/3085842107.js" crossorigin="anonymous"></script>
@@ -79,206 +79,207 @@
     <div class="content-wrapper">
       <section class="home-info">
         <h1>Checkout</h1>
-        <hr class="headline-hr">
+        <hr class="headline-hr" />
       </section>
 
-      <!-- billing info --> 
+      <!-- billing info -->
 
-        <div class="billing-container">
-          <section class="billing-info">
-            <h2>Billing information</h2>
-          <hr class="billing-hr">
+      <div class="billing-container">
+        <section class="billing-info">
+          <h2>Billing information</h2>
+          <hr class="billing-hr" />
           <form action="#">
-          <fieldset class="billingForm">
+            <fieldset class="billingForm">
               <label for="fname" class="checkout-txt">Full name</label>
-              <input type="text" id="fname" name="your name" class="checkout-details" required>
-              <label for="address" class="checkout-txt">Address</label>
-              <input type="text" id="address" name="your address" class="checkout-details" required>
+              <input type="text" id="fname" name="your name" class="checkout-details" required />
+              <label for="address-billing" class="checkout-txt">Address</label>
+              <input type="text" id="address-billing" name="your address" class="checkout-details" required />
               <label for="country" class="checkout-txt">Country</label>
-              <input type="text" id="country" name="your country" class="checkout-details" required>
+              <input type="text" id="country" name="your country" class="checkout-details" required />
               <label for="city" class="checkout-txt">City</label>
-              <input type="text" id="city" name="your city" class="checkout-details" required>
+              <input type="text" id="city" name="your city" class="checkout-details" required />
               <label for="postal" class="checkout-txt">ZIP/Postal</label>
-              <input type="tel" id="postal" name="your postal zip" class="checkout-details" required> 
+              <input type="tel" id="postal" name="your postal zip" class="checkout-details" required />
             </fieldset>
-          </form>  
+          </form>
         </section>
-        
-      <!-- delivery info -->
+
+        <!-- delivery info -->
 
         <section class="delivery-info">
           <h2>Delivery Method</h2>
-          <hr class="billing-hr">
-            <form action="#">
-            <label  class="checkout-radio">
+          <hr class="billing-hr" />
+          <form action="#">
+            <label class="checkout-radio">
               Home Delivery
-              <input type="radio" name="radio" id="homeDelivery">
+              <input type="radio" name="radio" id="homeDelivery" />
             </label>
             <p class="delivery-price"><em>Price: 9$</em></p>
-            <label  class="checkout-radio">
+            <label class="checkout-radio">
               Postal office
-              <input type="radio" name="radio" id="postalDelivery">
-            </label>  
-            </form>
-            <p class="delivery-price"><em>Price: 5$</em></p>
+              <input type="radio" name="radio" id="postalDelivery" />
+            </label>
+          </form>
+          <p class="delivery-price"><em>Price: 5$</em></p>
 
-            <!-- payment info -->
+          <!-- payment info -->
 
-            <section class="payment-information">
-              <hr class="billing-hr">
-              <h2>Payment information</h2>
-              
-              <form action="#">
-                <label class="checkout-radio">
-                  PayPal
-                  <input type="radio" name="radio" id="paypal">
-                </label>
-                <div class=""></div>
-                <label  class="checkout-radio">
-                  Credit/Debit card
-                  <input type="radio" name="radio" id="credit-card">
-                </label>  
-              </form>
-            </section>
+          <section class="payment-information">
+            <hr class="billing-hr" />
+            <h2>Payment information</h2>
 
-            <!-- Payment details -->
-
-            <section class="payment-details">
-              <hr class="billing-hr">
-              <h2>Payment details</h2>
-              <form action="#">
-                <fieldset class="billingForm">
-                  <label for="card-number">Card number</label>
-                  <input type="tel" name="card-number" id="card-info" class="checkout-details" required>
-                  <label for="ExpMon">Expiration Date</label>
-                  <select name="ExpMon" id="month-info" class="checkout-details" required>
-                    <option value="1">--</option>
-                    <option value="2">Jan</option>
-                    <option value="3">Feb</option>
-                    <option value="4">Mar</option>
-                    <option value="5">Apr</option>
-                    <option value="6">May</option>
-                    <option value="7">June</option>
-                    <option value="8">July</option>
-                    <option value="9">Aug</option>
-                    <option value="10">Sep</option>
-                    <option value="11">Okt</option>
-                    <option value="12">Nov</option>
-                    <option value="13">Des</option>
-                  </select>
-                  <select name="ExpYear" id="year-info" class="checkout-details" >
-                    <option value="1">--</option>
-                    <option value="2" aria-required="true">2021</option>
-                    <option value="3">2022</option>
-                    <option value="4">2023</option>
-                    <option value="5">2024</option>
-                    <option value="6">2025</option>
-                  </select>
-                  <label for="CVC">CVC number</label>
-                  <input type="tel" name="CVC" id="cvc-info" class="checkout-details" required>
-                </fieldset>
-                <a href="/checkout_success.html"><input type="button" id="forwardProceed" class="proceed-btn" value="Checkout"></a>
-              </form>
-            </section>
-          </div>
-
-          <!-- footer -->
-
-          <footer>
-            <hr class="footer-hr" />
-            <nav class="footer-nav">
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="marketplace.html">Marketplace</a></li>
-                <li><a href="games.html">Games</a></li>
-                <li><a href="contact.html">Contact us</a></li>
-              </ul>
-            </nav>
-            <div class="bottom-container">
-              <p>Phillip Mikalsen FT21 GameHub</p>
-            </div>
-          </footer>
-    </div> <!-- Wrapper div -->
-      
-      <!--Overlays-->
-
-      <!-- Log in -->
-
-      <div id="profileClick" class="profile-overlay">
-        <div class="profile-popup">
-          <div class="sign-create-btn-container">
-            <a class="signin-btn-top" href="#profileClick">Sign In </a>
-            <a class="signup-btn-top" href="#profileCreate">Create User</a>
-            <a href="#" class="close-profileOverlay">&times;</a>
-          </div>
-          <div class="profile-log-container">
-            <form action="#" method="post">
-              <label for="email-log" class="login-txt">Email</label>
-              <input type="text" class="login-box" name="mail" id="email-log" required />
-              <label for="password-login" class="login-txt">Password</label>
-              <input type="password" class="login-box" name="pw" id="password-login" required />
-              <label class="checkbox-container"
-                >Remember Me
-                <input type="checkbox" />
-                <span class="checkmark"></span>
+            <form action="#">
+              <label class="checkout-radio">
+                PayPal
+                <input type="radio" name="radio" id="paypal" />
+              </label>
+              <div class=""></div>
+              <label class="checkout-radio">
+                Credit/Debit card
+                <input type="radio" name="radio" id="credit-card" />
               </label>
             </form>
-            <div class="login-btn-container">
-              <a href="#" class="signin-btn">Sign In</a>
-              <a href="#" class="password-btn">Forgotten password</a>
-            </div>
-          </div>
-          
-        </div>
-      </div>
+          </section>
 
-      <!-- Create user Overlay -->
+          <!-- Payment details -->
 
-      <div id="profileCreate" class="profile-overlay">
-        <div class="profile-popup">
-          <div class="sign-create-btn-container">
-            <a class="signin-btn-top" href="#profileClick">Sign In </a>
-            <a class="signup-btn-top" href="#profileCreate">Create User</a>
-            <a href="#" class="close-profileOverlay">&times;</a>
-          </div>
-          <div class="create-profile-container">
-            <form action="#" method="post">
-              <fieldset class="create-field">
-                <div class="create-row-container">
-                  <label for="fullName" class="create-txt">Full name</label>
-                  <input type="text" name="f-name" class="create-details" id="fullName" required />
-                </div>
-                <div class="create-row-container">
-                  <label for="userName" class="create-txt">User name</label>
-                  <input type="text" name="usname" class="create-details" id="userName" required />
-                </div>
-                <div class="create-row-container">
-                  <label for="address" class="create-txt">Address</label>
-                  <input type="text" name="address" class="create-details" id="address" required />
-                </div>
-                <div class="create-row-container">
-                  <label for="country" class="create-txt">Country</label>
-                  <input type="text" name="country" class="create-details" id="country" required />
-                </div>
-                <div class="create-row-container">
-                  <label for="postal" class="create-txt">ZIP/Postal</label>
-                  <input type="tel" name="postal-zip" class="create-details" id="postal" required />
-                </div>
-                <div class="create-row-container">
-                  <label for="email" class="create-txt">Email</label>
-                  <input type="email" name="mail" class="create-details" id="email" required />
-                </div>
-                <div class="create-row-container">
-                  <label for="password-create" class="create-txt">Password</label>
-                  <input type="password" name="pw" class="create-details" id="password-create" required />
-                </div>
+          <section class="payment-details">
+            <hr class="billing-hr" />
+            <h2>Payment details</h2>
+            <form action="#">
+              <fieldset class="billingForm">
+                <label for="card-number">Card number</label>
+                <input type="tel" name="card-number" id="card-info" class="checkout-details" required />
+                <label for="ExpMon">Expiration Date</label>
+                <select name="ExpMon" id="month-info" class="checkout-details">
+                  <option value="1">--</option>
+                  <option value="2">Jan</option>
+                  <option value="3">Feb</option>
+                  <option value="4">Mar</option>
+                  <option value="5">Apr</option>
+                  <option value="6">May</option>
+                  <option value="7">June</option>
+                  <option value="8">July</option>
+                  <option value="9">Aug</option>
+                  <option value="10">Sep</option>
+                  <option value="11">Okt</option>
+                  <option value="12">Nov</option>
+                  <option value="13">Des</option>
+                </select>
+                <select name="ExpYear" id="year-info" class="checkout-details">
+                  <option value="1">--</option>
+                  <option value="2">2021</option>
+                  <option value="3">2022</option>
+                  <option value="4">2023</option>
+                  <option value="5">2024</option>
+                  <option value="6">2025</option>
+                </select>
+                <label for="CVC">CVC number</label>
+                <input type="tel" name="CVC" id="cvc-info" class="checkout-details" required />
               </fieldset>
-              <div class="create-finish-container">
-                <input type="submit" class="create-finish-btn" value="Create user profile">
-              </div>
+              <a href="/checkout_success.html" class="proceed-btn">Checkout</a>
             </form>
+          </section>
+        </section>
+      </div>
+
+      <!-- footer -->
+
+      <footer>
+        <hr class="footer-hr" />
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="marketplace.html">Marketplace</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </nav>
+        <div class="bottom-container">
+          <p>Phillip Mikalsen FT21 GameHub</p>
+        </div>
+      </footer>
+    </div>
+    <!-- Wrapper div -->
+
+    <!--Overlays-->
+
+    <!-- Log in -->
+
+    <div id="profileClick" class="profile-overlay">
+      <div class="profile-popup">
+        <div class="sign-create-btn-container">
+          <a class="signin-btn-top" href="#profileClick">Sign In </a>
+          <a class="signup-btn-top" href="#profileCreate">Create User</a>
+          <a href="#" class="close-profileOverlay">&times;</a>
+        </div>
+        <div class="profile-log-container">
+          <form action="#" method="post">
+            <label for="email-log" class="login-txt">Email</label>
+            <input type="text" class="login-box" name="mail" id="email-log" required />
+            <label for="password-login" class="login-txt">Password</label>
+            <input type="password" class="login-box" name="pw" id="password-login" required />
+            <label class="checkbox-container"
+              >Remember Me
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </form>
+          <div class="login-btn-container">
+            <a href="#" class="signin-btn">Sign In</a>
+            <a href="#" class="password-btn">Forgotten password</a>
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- Create user Overlay -->
+
+    <div id="profileCreate" class="profile-overlay">
+      <div class="profile-popup">
+        <div class="sign-create-btn-container">
+          <a class="signin-btn-top" href="#profileClick">Sign In </a>
+          <a class="signup-btn-top" href="#profileCreate">Create User</a>
+          <a href="#" class="close-profileOverlay">&times;</a>
+        </div>
+        <div class="create-profile-container">
+          <form action="#" method="post">
+            <fieldset class="create-field">
+              <div class="create-row-container">
+                <label for="fullName" class="create-txt">Full name</label>
+                <input type="text" name="f-name" class="create-details" id="fullName" required />
+              </div>
+              <div class="create-row-container">
+                <label for="userName" class="create-txt">User name</label>
+                <input type="text" name="usname" class="create-details" id="userName" required />
+              </div>
+              <div class="create-row-container">
+                <label for="address" class="create-txt">Address</label>
+                <input type="text" name="address" class="create-details" id="address" required />
+              </div>
+              <div class="create-row-container">
+                <label for="country" class="create-txt">Country</label>
+                <input type="text" name="country" class="create-details" id="country" required />
+              </div>
+              <div class="create-row-container">
+                <label for="postal" class="create-txt">ZIP/Postal</label>
+                <input type="tel" name="postal-zip" class="create-details" id="postal" required />
+              </div>
+              <div class="create-row-container">
+                <label for="email" class="create-txt">Email</label>
+                <input type="email" name="mail" class="create-details" id="email" required />
+              </div>
+              <div class="create-row-container">
+                <label for="password-create" class="create-txt">Password</label>
+                <input type="password" name="pw" class="create-details" id="password-create" required />
+              </div>
+            </fieldset>
+            <div class="create-finish-container">
+              <input type="submit" class="create-finish-btn" value="Create user profile" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
