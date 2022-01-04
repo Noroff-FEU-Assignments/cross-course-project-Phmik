@@ -1,0 +1,26 @@
+.search-txt {
+  background: none;
+  padding: 0;
+  color: #fff;
+  font-size: 1.2rem;
+  transform: 0.4s;
+  line-height: 40px;
+  width: 0px;
+  transition: 0.4s;
+}
+
+.search-btn {
+  color: #1b203d;
+  height: 40px;
+  width: 40px;
+}
+
+.search-box:hover > .search-txt {
+  width: 240px;
+  padding: 0 6px;
+}
+
+::placeholder {
+  color: #1b203d;
+  font-size: 1.1rem;
+}

@@ -1,0 +1,64 @@
+.selling-games p {
+  margin-left: 35px;
+}
+
+.fa-plus {
+  background-color: #fff;
+  font-size: 1.7rem;
+  color: #1b203d;
+  padding: 5px;
+  border-radius: 50%;
+  margin-left: 35px;
+}
+
+.fa-search {
+  color: #1b203d;
+  font-size: 1.7rem;
+  padding: 5px;
+}
+
+.fa-search:hover,
+.fa-plus:hover {
+  color: #41a535;
+}
+
+.sell-product,
+#sell-plus {
+  display: none;
+}
+
+#sell-plus:checked ~ .sell-product {
+  display: block;
+}
+
+.sell-container {
+  display: flex;
+  gap: 1vh;
+  flex-direction: row;
+}
+
+.sell-search {
+  width: 100%;
+  max-width: 250px;
+  height: 40px;
+  background: #fff;
+  border-radius: 10px;
+  padding-left: 20px;
+  font-size: 1rem;
+}
+
+.sell-search::placeholder {
+  font-size: 0.8rem;
+}
+
+.sell-row-container {
+  display: flex;
+  gap: 1vh;
+}
+
+.search-game-button {
+  background: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}

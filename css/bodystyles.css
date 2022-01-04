@@ -1,0 +1,32 @@
+.footer-hr {
+  border: 1px solid #fff;
+  margin: 40px 0px 0px 35px;
+  max-width: 1000px;
+}
+
+.footer-nav li {
+  list-style: none;
+  padding: 1rem 0 0 0;
+}
+
+.footer-nav a {
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+.bottom-container {
+  max-width: 100%;
+  margin-left: 35px;
+  background: rgba(221, 221, 221, 40%);
+  padding: 1px;
+  text-align: center;
+}
+
+.bottom-container p {
+  color: #1b203d;
+}

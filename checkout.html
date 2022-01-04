@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Checkout" />
+    <meta name="keywords" content="Buy, sell, games, preorder" />
+    <meta name="author" content="Phillip Mikalsen" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/3085842107.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/vsr7unr.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/logincreate.css" />
+    <link rel="stylesheet" href="css/checkout.css" />
+    <link rel="stylesheet" href="css/search.css" />
+    <link rel="stylesheet" href="css/bodystyles.css" />
+    <link rel="stylesheet" href="css/medias.css" />
+    <title>Checkout</title>
+  </head>
+  <body>
+    <header>
+      <!-- logo -->
+
+      <div class="container">
+        <div class="row space-between">
+          <div class="logo">
+            <img src="images/GameHub_Logo.png" alt="gamehub logo" />
+          </div>
+
+          <!-- top nav -->
+
+          <div class="nav-container column">
+            <nav class="nav-top">
+              <ul>
+                <li>
+                  <div class="search-box">
+                    <input class="search-txt" type="text" name="search-nav" placeholder="Search game.." />
+                    <a href="#" class="search-btn"><span class="fas fa-search"></span></a>
+                  </div>
+                </li>
+                <li>
+                  <a href="checkout.html" class="active"><span class="fas fa-shopping-cart"></span></a>
+                </li>
+                <li>
+                  <div class="dropdown-profile">
+                    <a href="profile/profile.html"><span class="fas fa-user"></span></a>
+                    <div class="dropdown-profile-content">
+                      <a href="profile/profile.html">My Profile</a>
+                      <a href="#profileClick">Log in</a>
+                      <a href="#profileCreate">Create User</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+
+            <!-- main nav -->
+
+            <nav class="nav-main">
+              <ul>
+                <li>
+                  <a href="index.html"><span class="fas fa-home"></span> <span class="nav-text">Home</span></a>
+                </li>
+                <li>
+                  <a href="marketplace.html"><span class="fas fa-store"></span> <span class="nav-text">Marketplace</span></a>
+                </li>
+                <li>
+                  <a href="games.html"><span class="fas fa-gamepad"></span> <span class="nav-text">Games</span></a>
+                </li>
+                <li>
+                  <a href="contact.html"><span class="fas fa-envelope"></span> <span class="nav-text">Contact</span></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="content-wrapper">
+        <section class="home-info">
+          <h1>Checkout</h1>
+          <hr class="headline-hr" />
+        </section>
+
+        <!-- billing info -->
+
+        <div class="billing-container">
+          <section class="billing-info">
+            <h2>Billing information</h2>
+            <hr class="billing-hr" />
+            <form action="#">
+              <fieldset class="billingForm">
+                <label for="fname" class="checkout-txt">Full name</label>
+                <input type="text" id="fname" name="your name" class="checkout-details" required />
+                <label for="address-billing" class="checkout-txt">Address</label>
+                <input type="text" id="address-billing" name="your address" class="checkout-details" required />
+                <label for="country-billing" class="checkout-txt">Country</label>
+                <input type="text" id="country-billing" name="your country" class="checkout-details" required />
+                <label for="city" class="checkout-txt">City</label>
+                <input type="text" id="city" name="your city" class="checkout-details" required />
+                <label for="postal-billing" class="checkout-txt">ZIP/Postal</label>
+                <input type="tel" id="postal-billing" name="your postal zip" class="checkout-details" required />
+              </fieldset>
+            </form>
+          </section>
+
+          <!-- delivery info -->
+
+          <section class="delivery-info">
+            <h2>Delivery Method</h2>
+            <hr class="billing-hr" />
+            <form action="#">
+              <label class="checkout-radio">
+                Home Delivery
+                <input type="radio" name="radio" id="homeDelivery" />
+              </label>
+              <p class="delivery-price"><em>Price: 9$</em></p>
+              <label class="checkout-radio">
+                Postal office
+                <input type="radio" name="radio" id="postalDelivery" />
+              </label>
+            </form>
+            <p class="delivery-price"><em>Price: 5$</em></p>
+
+            <!-- payment info -->
+
+            <section class="payment-information">
+              <hr class="billing-hr" />
+              <h2>Payment information</h2>
+
+              <form action="#">
+                <label class="checkout-radio">
+                  PayPal
+                  <input type="radio" name="radio" id="paypal" />
+                </label>
+                <div class=""></div>
+                <label class="checkout-radio">
+                  Credit/Debit card
+                  <input type="radio" name="radio" id="credit-card" />
+                </label>
+              </form>
+            </section>
+
+            <!-- Payment details -->
+
+            <section class="payment-details">
+              <hr class="billing-hr" />
+              <h2>Payment details</h2>
+              <form action="#">
+                <fieldset class="billingForm">
+                  <label for="cardNumber">Card number</label>
+                  <input type="tel" name="card-number" id="cardNumber" class="checkout-details" required />
+                  <label for="expMon">Expiration Date</label>
+                  <select name="expiration-date" id="expMon" class="checkout-details">
+                    <option value="1">--</option>
+                    <option value="2">Jan</option>
+                    <option value="3">Feb</option>
+                    <option value="4">Mar</option>
+                    <option value="5">Apr</option>
+                    <option value="6">May</option>
+                    <option value="7">June</option>
+                    <option value="8">July</option>
+                    <option value="9">Aug</option>
+                    <option value="10">Sep</option>
+                    <option value="11">Okt</option>
+                    <option value="12">Nov</option>
+                    <option value="13">Des</option>
+                  </select>
+                  <select name="expiration-date" id="expYear" class="checkout-details">
+                    <option value="1">--</option>
+                    <option value="2">2021</option>
+                    <option value="3">2022</option>
+                    <option value="4">2023</option>
+                    <option value="5">2024</option>
+                    <option value="6">2025</option>
+                  </select>
+                  <label for="cvc">CVC number</label>
+                  <input type="tel" name="CVC-number" id="cvc" class="checkout-details" required />
+                </fieldset>
+                <a href="/checkout_success.html" class="proceed-btn">Checkout</a>
+              </form>
+            </section>
+          </section>
+        </div>
+
+        <!-- footer -->
+
+        <footer>
+          <hr class="footer-hr" />
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="marketplace.html">Marketplace</a></li>
+              <li><a href="games.html">Games</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+            </ul>
+          </nav>
+          <div class="bottom-container">
+            <p>Phillip Mikalsen FT21 GameHub</p>
+          </div>
+        </footer>
+      </div>
+      <!-- Wrapper div -->
+    </main>
+
+    <!--Overlays-->
+
+    <!-- Log in -->
+
+    <div id="profileClick" class="profile-overlay">
+      <div class="profile-popup">
+        <div class="sign-create-btn-container">
+          <a class="signin-btn-top" href="#profileClick">Sign In </a>
+          <a class="signup-btn-top" href="#profileCreate">Create User</a>
+          <a href="#" class="close-profileOverlay">&times;</a>
+        </div>
+        <div class="profile-log-container">
+          <form action="#" method="post">
+            <label for="email-log" class="login-txt">Email</label>
+            <input type="text" class="login-box" name="mail" id="email-log" required />
+            <label for="password-login" class="login-txt">Password</label>
+            <input type="password" class="login-box" name="pw" id="password-login" required />
+            <label class="checkbox-container"
+              >Remember Me
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </form>
+          <div class="login-btn-container">
+            <a href="#" class="signin-btn">Sign In</a>
+            <a href="#" class="password-btn">Forgotten password</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Create user Overlay -->
+
+    <div id="profileCreate" class="profile-overlay">
+      <div class="profile-popup">
+        <div class="sign-create-btn-container">
+          <a class="signin-btn-top" href="#profileClick">Sign In </a>
+          <a class="signup-btn-top" href="#profileCreate">Create User</a>
+          <a href="#" class="close-profileOverlay">&times;</a>
+        </div>
+        <div class="create-profile-container">
+          <form action="#" method="post">
+            <fieldset class="create-field">
+              <div class="create-row-container">
+                <label for="fullName" class="create-txt">Full name</label>
+                <input type="text" name="f-name" class="create-details" id="fullName" required />
+              </div>
+              <div class="create-row-container">
+                <label for="userName" class="create-txt">User name</label>
+                <input type="text" name="usname" class="create-details" id="userName" required />
+              </div>
+              <div class="create-row-container">
+                <label for="address" class="create-txt">Address</label>
+                <input type="text" name="address" class="create-details" id="address" required />
+              </div>
+              <div class="create-row-container">
+                <label for="country" class="create-txt">Country</label>
+                <input type="text" name="country" class="create-details" id="country" required />
+              </div>
+              <div class="create-row-container">
+                <label for="postal" class="create-txt">ZIP/Postal</label>
+                <input type="tel" name="postal-zip" class="create-details" id="postal" required />
+              </div>
+              <div class="create-row-container">
+                <label for="email" class="create-txt">Email</label>
+                <input type="email" name="mail" class="create-details" id="email" required />
+              </div>
+              <div class="create-row-container">
+                <label for="password-create" class="create-txt">Password</label>
+                <input type="password" name="pw" class="create-details" id="password-create" required />
+              </div>
+            </fieldset>
+            <div class="create-finish-container">
+              <input type="submit" class="create-finish-btn" value="Create user profile" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

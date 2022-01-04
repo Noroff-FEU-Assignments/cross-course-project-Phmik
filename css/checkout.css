@@ -1,0 +1,133 @@
+h2 {
+  font-size: 1.6rem;
+  margin: 0px;
+}
+
+.billing-hr {
+  margin-top: 1rem;
+  border: solid 1px #fff;
+  width: 300px;
+}
+
+.billing-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 35px;
+}
+
+.billing-info,
+.delivery-info {
+  max-width: 300px;
+  margin: 20px 0px 0px 35px;
+}
+
+.billingForm {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.billingForm input {
+  height: 40px;
+  border-radius: 5px;
+  margin: 10px 0px;
+}
+
+.checkout-details {
+  padding: 0px 0px 0px 5px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.checkout-txt {
+  font-size: 1.2rem;
+}
+
+.proceed-btn {
+  background: none;
+  color: #41a535;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border: solid 1px #41a535;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* checkout text + radio button */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.checkout-radio {
+  font-size: 1.2rem;
+  margin: 20px 10px 0px;
+  color: #fff;
+  display: flex;
+  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delivery-price {
+  margin: 2px 10px;
+  color: #41a535;
+}
+
+input[type="radio"] {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+input[type="radio"]::before {
+  display: flex;
+  justify-items: center;
+  border-radius: 50%;
+  content: "x";
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #1b203d;
+  padding: 0px 0px 6px 5.5px;
+  transform: scale(0);
+  transition: 0.4s ease-in-out;
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+/* Hover effects */
+
+input[type="radio"]:hover,
+.checkout-details:hover {
+  background-color: #ddd;
+}
+
+.proceed-btn:hover {
+  color: #fff;
+  background-color: #41a535;
+  transition-duration: 0.4s;
+}
+
+/* Payment */
+
+#month-info,
+#year-info {
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-top: 10px;
+  padding: 10px;
+  background: #fff;
+}

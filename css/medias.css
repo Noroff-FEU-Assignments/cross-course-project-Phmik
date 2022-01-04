@@ -1,0 +1,243 @@
+@media only screen and (max-width: 770px) {
+  /* navigation phone */
+
+  /* Icons phone */
+
+  .fa-home,
+  .fa-store,
+  .fa-gamepad,
+  .fa-envelope {
+    display: block;
+    color: #1b203d;
+  }
+
+  .nav-main .active,
+  .nav-main a:hover {
+    text-decoration: none;
+  }
+
+  .nav-text {
+    display: none;
+  }
+
+  .nav-top ul {
+    background-color: rgba(221, 221, 221, 40%);
+    border-radius: 10px;
+  }
+
+  .nav-top li {
+    display: inline-block;
+    padding: 10px 30px 10px 0;
+    font-size: 2rem;
+  }
+
+  .nav-main ul {
+    background-color: rgba(221, 221, 221, 40%);
+    border-radius: 13px;
+  }
+
+  .nav-main li {
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 10px 11px 0px 0px;
+    margin-top: 50px;
+  }
+
+  /* search bar */
+
+  .search-box:hover > .search-txt {
+    width: 180px;
+    padding: 0 6px;
+  }
+
+  /* flexbox nav phone */
+
+  .space-between {
+    justify-content: space-between;
+  }
+
+  /* Main content phone */
+
+  .home-content {
+    flex-direction: column;
+  }
+  .home-games {
+    flex-direction: column;
+    column-gap: 50px;
+  }
+  .games-content {
+    max-width: 400px;
+  }
+
+  /* contact page */
+
+  .contact-content p {
+    font-size: 1.3rem;
+  }
+
+  /* buttons phone */
+
+  .more-info {
+    font-size: 2rem;
+    top: 84%;
+  }
+
+  .more-info .fa-arrow-right {
+    padding-left: 30%;
+  }
+
+  /* footer nav */
+  .bottom-container {
+    margin-left: 0px;
+  }
+
+  /* Games page */
+  .add-cart-cta,
+  .product-more-info {
+    font-size: 1.5rem;
+  }
+
+  /* profile page */
+
+  .profile-info {
+    margin-bottom: 20px;
+  }
+
+  .profile-forsale,
+  .profile-bio {
+    margin-right: 20px;
+  }
+
+  .profile-forsale a,
+  .profile-forsale p {
+    font-size: 1rem;
+  }
+
+  .profile-container {
+    flex-wrap: wrap;
+  }
+
+  .games-hr {
+    display: none;
+  }
+
+  /* Add to cart overlay */
+
+  .added-popup h5 {
+    font-size: 1.25rem;
+  }
+
+  .added-popup a {
+    font-size: 1rem;
+  }
+
+  .overlay-row-container {
+    gap: 50px;
+  }
+  /* login details phone */
+
+  .signin-btn-top,
+  .signup-btn-top,
+  .signin-btn,
+  .signup-btn {
+    font-size: 1.3rem;
+  }
+
+  .login-txt,
+  .checkbox-container,
+  .create-txt {
+    font-size: 1rem;
+  }
+
+  .signin-btn-top {
+    margin-right: 42px;
+  }
+
+  .signin-btn-top,
+  .signup-btn-top {
+    margin-top: 15px;
+  }
+
+  .login-box,
+  .create-details {
+    max-width: 200px;
+  }
+
+  /* checkout page */
+
+  .billing-container {
+    flex-wrap: wrap;
+  }
+
+  @media only screen and (max-width: 404px) {
+    /* profile page */
+
+    .profile-container {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .profile-bio p {
+      font-size: 1rem;
+    }
+
+    .profile-hr {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 374px) {
+    /* login details */
+
+    .create-row-container {
+      flex-direction: column;
+      gap: 0px;
+    }
+
+    .profile-popup .close-profileOverlay {
+      margin-left: -20px;
+    }
+
+    /* Product page */
+
+    .add-cart-cta-product {
+      font-size: 1.2rem;
+    }
+
+    .create-finish-btn {
+      font-size: 1.1rem;
+    }
+
+    /* contact form */
+
+    .contact-img img {
+      display: none;
+    }
+
+    .contact-information,
+    .contact-details {
+      font-size: 1rem;
+    }
+
+    .input-contact,
+    .label-contact,
+    .textarea-contact,
+    .submit-contact {
+      max-width: 270px;
+    }
+
+    /* Checkout page */
+
+    .payment-details,
+    .delivery-info,
+    .billing-info {
+      max-width: 260px;
+    }
+
+    /* success page */
+
+    .success-content a {
+      font-size: 1rem;
+    }
+  }
+}

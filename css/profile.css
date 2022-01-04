@@ -1,0 +1,148 @@
+/* profile info */
+
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  margin: 21px 0 0 35px;
+  gap: 10px;
+}
+
+.profile-img {
+  display: flex;
+  max-width: 150px;
+}
+
+.profile-img img {
+  margin-top: 10px;
+  border-radius: 10%;
+}
+
+.profile-hr,
+.games-hr {
+  margin: -10px 35px;
+  border: 1px solid #fff;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 160px;
+  width: 100%;
+  gap: 15px;
+}
+
+.profile-info p {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0px;
+  border-bottom: 1.5px solid #fff;
+}
+
+.msg-btn {
+  border: 1px solid rgb(255, 183, 1);
+  border-radius: 5px;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.msg-btn:hover {
+  background-color: rgb(255, 183, 1);
+  transition: 0.4s;
+  color: #1b203d;
+}
+
+.profile-info h3 {
+  margin: 0px;
+  text-transform: uppercase;
+}
+
+.profile-info-row {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
+}
+
+.profile-info-row .fa-star {
+  color: rgb(255, 183, 1);
+}
+
+/* bio info */
+
+.profile-bio {
+  max-width: 400px;
+  width: 100%;
+}
+
+.profile-bio h2,
+.profile-forsale h2 {
+  margin: 0px;
+  font-size: 1.5rem;
+}
+
+.profile-bio p {
+  max-width: 350px;
+  font-size: 1.2rem;
+}
+
+.bio-hr {
+  border: 1px solid #fff;
+  max-width: 1000px;
+  margin-top: 15px;
+}
+
+/* for sale info */
+
+.price-hr {
+  border: solid 1px #fff;
+  margin: 0px 20px;
+}
+
+.profile-forsale {
+  max-width: 400px;
+  width: 100%;
+}
+
+.games-forsale-img img {
+  max-width: 150px;
+}
+
+.forsale-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-forsale a {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.profile-forsale p {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.profile-price {
+  color: #41a535;
+}
+
+.pricing-container a:hover {
+  color: #41a535;
+  text-decoration: underline;
+}
+
+a > div {
+  display: none;
+}
+
+a:hover > div {
+  display: block;
+}
